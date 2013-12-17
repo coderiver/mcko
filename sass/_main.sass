@@ -1,0 +1,326 @@
+body
+	font:
+		family: Arial,sans-serif
+		weight: normal
+		size: 14px
+	line-height: 1.4
+	background: #fff
+	min-width: 960px
+
+
+=wrap
+	display: block
+	width: 940px
+	margin-left: auto
+	margin-right: auto
+
+// Normally mainpage styles
+.bar
+	background: #0f9287
+	color: #fff
+	height: 30px
+	line-height: 30px
+.bar-i
+	+wrap
+	+clr
+.login
+	float: right
+	font-size: 11px
+	+clr
+	.login__signin, .login__signup
+		float: left
+	.login__input
+		width: 106px
+		+box
+		padding-left: 1px
+		margin-left: 15px
+		border-bottom: 1px solid #68bab3
+		background: none
+		color: #fff
+		+placeholder-color(#fff)
+		&:focus
+			+placeholder-color(transparent)
+	.login__btn
+		position: relative
+		margin-left: 10px
+		color: #fff
+		background: none
+		border-bottom: 1px dotted #fff
+		&:active
+			top: 1px
+.language
+	float: right
+	margin-left: 10px
+	width: 60px
+	text-align: right
+	color: #095851
+	font-size: 13px
+	a
+		color: #095851
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+		&.is-active
+			color: #fff
+			font-weight: bold
+			text-decoration: none
+
+.header
+	+wrap
+	+clr
+	height: 150px
+	.header__logo
+		float: left
+		width: 300px
+		padding-top: 27px
+		margin-right: -300px
+		+hidetext
+		a
+			display: block
+			height: 100%
+			+s(logo)
+	.header__main
+		float: left
+		width: 460px
+		padding-top: 50px
+		margin-left: 320px
+	.header__slogan
+		font-size: 26px
+		color: #7d7d7d
+		margin-bottom: 24px
+		line-height: 1
+	.nav
+		position: relative
+		+clr
+		li
+			float: left
+			margin-left: 28px
+			font-size: 13px
+			color: #000
+			&:first-child
+				margin-left: 0
+			&:hover
+				.nav__drop
+					display: block
+				& > a
+					color: #f6a01e
+					text-decoration: none
+			a
+				color: #000
+				text-decoration: underline
+				&:hover
+					color: #f6a01e
+					text-decoration: none
+		.nav__drop
+			display: none
+			position: absolute
+			left: 0
+			padding-top: 9px
+			padding-bottom: 5px
+			ul
+				position: relative
+				+clr
+				&:before
+					position: absolute
+					top: -5px
+					left: -90px
+					+s(nav-shadow)
+					content: ""
+			li
+				margin-left: 23px
+				&:first-child
+					margin-left: 0
+				a
+					color: #7f7f7f
+					text-decoration: none
+					&:hover
+						color: #f6a01e
+
+	.header__info
+		float: right
+		width: 160px
+		padding-top: 46px
+		text-align: right
+		font-size: 12px
+		a
+			color: #f7a72b
+			text-decoration: underline
+			&:hover
+				color: #000
+				text-decoration: none
+	.search
+		+clr
+		margin-bottom: 14px
+		.search-i
+			position: relative
+			width: 140px
+			float: right
+		.search__query
+			width: 140px
+			padding-left: 27px
+			height: 22px
+			+box
+			border: 2px solid #f9f9f9
+			border-width: 2px 2px 1px 2px
+			font-size: 11px
+			line-height: 1
+			+placeholder-color(#6b6b6b)
+			+box-shadow(0 1px 0 #adadad)
+			&:focus
+				+placeholder-color(transparent)
+		.search__btn
+			position: absolute
+			+s(search)
+			left: 5px
+			top: 50%
+			margin-top: -6px
+
+
+
+
+
+
+
+
+.footer
+	.footer__links
+		height: 120px
+		line-height: 120px
+		background: #e6e6e6
+		font-size: 13px
+		color: #000
+	.footer__links-holder
+		+wrap
+		+clr
+	.footer__links-title
+		position: relative
+		float: left
+		width: 220px
+		padding-right: 10px
+		text-transform: uppercase
+		text-align: center
+		&:before
+			position: absolute
+			right: 0
+			top: 12px
+			bottom: 12px
+			width: 1px
+			background: #0f8293
+			content: ""
+		i
+			display: inline-block
+			vertical-align: middle
+			margin-right: 12px
+			+s(ruby)
+	.footer__links-list
+		float: left
+		height: 120px
+		line-height: 120px
+		+clr
+		li
+			float: left
+			// width: 140px
+			padding-left: 75px
+			font-size: 18px
+			a
+				display: inline-block
+				vertical-align: middle
+				line-height: 1
+				text-decoration: none
+				color: #545454
+				span
+					font-size: 21px
+	.footer__row
+		+wrap
+		+clr
+		padding-bottom: 65px
+	.footer__col1
+		float: left
+		width: 700px
+	.footer__col2
+		float: right
+		width: 220px
+		padding-top: 40px
+	.footer__logo
+		+s(logo-sm)
+		margin-bottom: 20px
+		a
+			display: block
+			height: 100%
+			+hidetext
+	.footer__menu
+		li
+			margin-bottom: 10px
+		a
+			position: relative
+			line-height: 1
+			padding-left: 31px
+			color: #131313
+			text-decoration: none
+			&:hover
+				color: #d00e53
+			&:before
+				position: absolute
+				top: 4px
+				left: 14px
+				+s(circle)
+				content: ""
+	.feedback
+		padding-top: 20px
+	.feedback__row
+		+clr
+		label
+			font-size: 18px
+			color: #000
+			margin-bottom: 10px
+			span
+				color: #1aa530
+		input
+			display: block
+			height: 36px
+			line-height: 20px
+			padding: 10px
+			width: 100%
+			border: 1px solid #959595
+			margin-bottom: 20px
+			+box
+	.feedback__col
+		float: left
+		width: 220px
+		margin-left: 20px
+		&:first-child
+			margin-left: 0
+	.feedback__text
+		width: 100%
+		height: 180px
+		padding: 10px
+		margin-bottom: 15px
+		border: 1px solid #959595
+		resize: none
+		+box
+	.feedback__btn
+		float: right
+		border: 1px solid #959595
+		background-color: #0f8193
+		color: #fff
+		+box
+		height: 36px
+		padding: 0 17px
+		font-size: 15px
+		&:hover, &:active
+			background-color: #1d9629
+		&:active
+			position: relative
+			top: 1px
+
+
+
+
+
+
+
+
+
+
+
+
