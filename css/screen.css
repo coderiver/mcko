@@ -187,7 +187,9 @@ body { font-family: Arial, sans-serif; font-weight: normal; font-size: 13px; col
 .l .l-main { float: left; margin-left: 240px; margin-right: 240px; }
 .l .l-right { float: right; width: 220px; margin-left: -220px; }
 
-.user { margin-bottom: 25px; border-bottom: 1px solid #0f8293; *zoom: 1; }
+.user-wrap .user:first-child { border-top: none; padding-top: 5px; }
+
+.user { padding-top: 25px; border-top: 1px solid #0f8293; *zoom: 1; }
 .user:after { content: " "; display: table; clear: both; }
 .user .user__profile { width: 220px; margin-right: 20px; float: left; }
 .user .user__foto { width: 220px; height: 290px; margin-bottom: 35px; overflow: hidden; }
