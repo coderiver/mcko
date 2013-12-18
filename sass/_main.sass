@@ -2,7 +2,8 @@ body
 	font:
 		family: Arial,sans-serif
 		weight: normal
-		size: 14px
+		size: 13px
+	color: #131313
 	line-height: 1.4
 	background: #fff
 	min-width: 960px
@@ -249,22 +250,6 @@ body
 			height: 100%
 			+hidetext
 	.footer__menu
-		li
-			margin-bottom: 10px
-		a
-			position: relative
-			line-height: 1
-			padding-left: 31px
-			color: #131313
-			text-decoration: none
-			&:hover
-				color: #d00e53
-			&:before
-				position: absolute
-				top: 4px
-				left: 14px
-				+s(circle)
-				content: ""
 	.feedback
 		padding-top: 20px
 	.feedback__row
@@ -312,6 +297,154 @@ body
 		&:active
 			position: relative
 			top: 1px
+
+.list
+	li
+		margin-bottom: 10px
+		line-height: 1
+		a
+			position: relative
+			display: inline-block
+			padding-left: 30px
+			color: #131313
+			text-decoration: none
+			&:before
+				position: absolute
+				top: 3px
+				left: 14px
+				+s(circle)
+				content: ""
+			&:hover
+				color: #d00e53
+				&:before
+					+s(circle-h)
+
+
+
+.subnav
+	background: #e6e6e6
+	margin-bottom: 40px
+	& > ul
+		+wrap
+		+clr
+		& > .subnav__item
+			position: relative
+			float: left
+			width: 220px
+			margin-left: 20px
+			min-height: 340px
+			padding-top: 130px
+			+box
+			&:first-child
+				margin-left: 0
+			&:after
+				position: absolute
+				height: 6px
+				left: 0
+				bottom: 0
+				width: 100%
+				content: ""
+			&:before
+				position: absolute
+				left: 50%
+				margin-left: -30px
+				content: ""
+			&.subnav__item_support
+				&:before
+					+s(support)
+					top: 32px
+				&:after
+					background: #0f8293
+			&.subnav__item_monitoring
+				&:before
+					+s(monitoring)
+					top: 35px
+				&:after
+					background: #0077b7
+			&.subnav__item_attest
+				&:before
+					+s(attest)
+					top: 23px
+				&:after
+					background: #f4961e
+			&.subnav__item_total-attest
+				&:before
+					+s(total-attest)
+					top: 26px
+				&:after
+					background: #d00e53
+	.subnav__title
+		font-size: 13px
+		color: #131313
+		text-transform: uppercase
+		margin-bottom: 0.5em
+		font-weight: bold
+	.subnav__list
+		a
+			padding-left: 20px
+			&:before
+				left: 0
+
+
+.content
+	a
+		color: #d00e53
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+.mrko
+	position: relative
+	margin-left: 47px
+	margin-bottom: 35px
+	&:before
+		position: absolute
+		top: 0
+		right: 100%
+		content: ""
+		+s(mrko)
+	a
+		display: block
+
+
+.news
+.news__title
+	text-transform: uppercase
+	margin-bottom: 1em
+.news__list
+.news__item
+	margin-top: 25px
+	&:first-child
+		margin-top: 0
+.news__meta
+	font-size: 10px
+	margin-bottom: 15px
+.news__date
+.news__divider
+	color: #1aa530
+.news__rubric
+.news__info
+	+clr
+.news__pic
+	float: left
+	width: 60px
+	margin-right: 20px
+	img
+		display: block
+		max-width: 60px
+		min-height: 45px
+.news__text
+	overflow: hidden
+	p
+.news__head
+	font-weight: bold
+
+
+
+
+
+
+
 
 
 
