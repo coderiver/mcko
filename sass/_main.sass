@@ -1,8 +1,6 @@
 body
-	font:
-		family: Arial,sans-serif
-		weight: normal
-		size: 13px
+	font-size: 13px
+	+ag_m
 	color: #131313
 	line-height: 1.4
 	background: #fff
@@ -22,6 +20,7 @@ body
 .breadcrumb
 	+clr
 	margin-bottom: 15px
+	+ag_r
 	li
 		display: inline
 		margin-left: 4px
@@ -42,21 +41,21 @@ body
 	font-size: 21px
 	text-transform: uppercase
 	margin-bottom: 0.2em
-	font-weight: bold
+	+ag_b
 
 .t2
 	color: #131313
 	font-size: 14px
 	text-transform: uppercase
 	margin-bottom: 0.5em
-	font-weight: bold
+	+ag_b
 	&.t2_alt
 		color: #0f8293
 
 .t3
 	font-size: 13px
 	color: #131313
-	font-weight: bold
+	+ag_b
 	text-transform: uppercase
 
 // list
@@ -107,6 +106,7 @@ body
 		border-bottom: 1px solid #68bab3
 		background: none
 		color: #fff
+		+ag_r
 		+placeholder-color(#fff)
 		&:focus
 			+placeholder-color(transparent)
@@ -116,6 +116,7 @@ body
 		color: #fff
 		background: none
 		border-bottom: 1px dotted #fff
+		+ag_r
 		&:active
 			top: 1px
 
@@ -127,6 +128,8 @@ body
 	text-align: right
 	color: #095851
 	font-size: 13px
+	+os_b
+	margin-top: -3px
 	a
 		color: #095851
 		text-decoration: underline
@@ -162,12 +165,14 @@ body
 		color: #7d7d7d
 		margin-bottom: 24px
 		line-height: 1
+		+os
 	.header__info
 		float: right
 		width: 160px
 		padding-top: 46px
 		text-align: right
 		font-size: 12px
+		+os
 		a
 			color: #f7a72b
 			text-decoration: underline
@@ -179,6 +184,7 @@ body
 .nav
 	position: relative
 	+clr
+	+ag_b
 	li
 		float: left
 		margin-left: 28px
@@ -204,6 +210,7 @@ body
 		left: 0
 		padding-top: 9px
 		padding-bottom: 5px
+		+ag_m
 		ul
 			position: relative
 			+clr
@@ -227,6 +234,7 @@ body
 .subnav
 	background: #e6e6e6
 	margin-bottom: 40px
+	+ag_r
 	&.subnav_mod
 		background: none
 		margin-bottom: 0
@@ -245,7 +253,7 @@ body
 			width: 220px
 			margin-left: 20px
 			min-height: 340px
-			padding-top: 130px
+			padding-top: 120px
 			+box
 			&:first-child
 				margin-left: 0
@@ -290,7 +298,7 @@ body
 		color: #131313
 		text-transform: uppercase
 		margin-bottom: 0.5em
-		font-weight: bold
+		+ag_b
 	.subnav__list
 		a
 			padding-left: 20px
@@ -434,6 +442,7 @@ body
 		background-color: #0f8193
 		color: #fff
 		+box
+		+ag_m
 		height: 36px
 		padding: 0 17px
 		font-size: 15px
@@ -472,6 +481,7 @@ body
 	.news__title
 		text-transform: uppercase
 		margin-bottom: 1em
+		+ag_b
 	.news__list
 	.news__item
 		margin-top: 25px
@@ -482,6 +492,7 @@ body
 		margin-bottom: 15px
 		+text-overflow
 	.news__date
+		+ag_l
 	.news__divider
 		color: #1aa530
 	.news__rubric
@@ -497,9 +508,11 @@ body
 			min-height: 45px
 	.news__text
 		overflow: hidden
+		+ag_l
 		p
+			+ag_l
 	.news__head
-		font-weight: bold
+		+ag_b
 
 // hentry
 .hentry
@@ -511,8 +524,9 @@ body
 			margin-top: 0
 	.hentry__title
 		margin-bottom: 0.5em
+		+ag_b
 	.hentry__subtitle
-		font-weight: bold
+		+ag_b
 		margin-bottom: 0.5em
 	.hentry__text
 	.hentry__meta
@@ -520,6 +534,7 @@ body
 		margin-bottom: 0.5em
 		font-size: 10px
 	.hentry__date
+		+ag_l
 	.hentry__divider
 		color: #1aa530
 	.hentry__link
