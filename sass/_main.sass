@@ -8,27 +8,33 @@ body
 	background: #fff
 	min-width: 960px
 
-
+// main wrapper
 =wrap
 	display: block
 	width: 940px
 	margin-left: auto
 	margin-right: auto
 
-// Normally mainpage styles
+.is-hidden
+	display: none
+
+// bar
 .bar
 	background: #0f9287
 	color: #fff
 	height: 30px
 	line-height: 30px
-.bar-i
-	+wrap
-	+clr
+	.bar-i
+		+wrap
+		+clr
+
+// login
 .login
 	float: right
 	font-size: 11px
 	+clr
-	.login__signin, .login__signup
+	.login__signin,
+	.login__signup
 		float: left
 	.login__input
 		width: 106px
@@ -49,6 +55,8 @@ body
 		border-bottom: 1px dotted #fff
 		&:active
 			top: 1px
+
+// language
 .language
 	float: right
 	margin-left: 10px
@@ -66,6 +74,7 @@ body
 			font-weight: bold
 			text-decoration: none
 
+// header
 .header
 	+wrap
 	+clr
@@ -90,53 +99,6 @@ body
 		color: #7d7d7d
 		margin-bottom: 24px
 		line-height: 1
-	.nav
-		position: relative
-		+clr
-		li
-			float: left
-			margin-left: 28px
-			font-size: 13px
-			color: #000
-			&:first-child
-				margin-left: 0
-			&:hover
-				.nav__drop
-					display: block
-				& > a
-					color: #f6a01e
-					text-decoration: none
-			a
-				color: #000
-				text-decoration: underline
-				&:hover
-					color: #f6a01e
-					text-decoration: none
-		.nav__drop
-			display: none
-			position: absolute
-			left: 0
-			padding-top: 9px
-			padding-bottom: 5px
-			ul
-				position: relative
-				+clr
-				&:before
-					position: absolute
-					top: -5px
-					left: -90px
-					+s(nav-shadow)
-					content: ""
-			li
-				margin-left: 23px
-				&:first-child
-					margin-left: 0
-				a
-					color: #7f7f7f
-					text-decoration: none
-					&:hover
-						color: #f6a01e
-
 	.header__info
 		float: right
 		width: 160px
@@ -149,40 +111,84 @@ body
 			&:hover
 				color: #000
 				text-decoration: none
-	.search
-		+clr
-		margin-bottom: 14px
-		.search-i
+
+// nav
+.nav
+	position: relative
+	+clr
+	li
+		float: left
+		margin-left: 28px
+		font-size: 13px
+		color: #000
+		&:first-child
+			margin-left: 0
+		&:hover
+			.nav__drop
+				display: block
+			& > a
+				color: #f6a01e
+				text-decoration: none
+		a
+			color: #000
+			text-decoration: underline
+			&:hover
+				color: #f6a01e
+				text-decoration: none
+	.nav__drop
+		display: none
+		position: absolute
+		left: 0
+		padding-top: 9px
+		padding-bottom: 5px
+		ul
 			position: relative
-			width: 140px
-			float: right
-		.search__query
-			width: 140px
-			padding-left: 27px
-			height: 22px
-			+box
-			border: 2px solid #f9f9f9
-			border-width: 2px 2px 1px 2px
-			font-size: 11px
-			line-height: 1
-			+placeholder-color(#6b6b6b)
-			+box-shadow(0 1px 0 #adadad)
-			&:focus
-				+placeholder-color(transparent)
-		.search__btn
-			position: absolute
-			+s(search)
-			left: 5px
-			top: 50%
-			margin-top: -6px
+			+clr
+			&:before
+				position: absolute
+				top: -5px
+				left: -90px
+				+s(nav-shadow)
+				content: ""
+		li
+			margin-left: 23px
+			&:first-child
+				margin-left: 0
+			a
+				color: #7f7f7f
+				text-decoration: none
+				&:hover
+					color: #f6a01e
 
+// search
+.search
+	+clr
+	margin-bottom: 14px
+	.search-i
+		position: relative
+		width: 140px
+		float: right
+	.search__query
+		width: 140px
+		padding: 0 10px 0 27px
+		height: 22px
+		+box
+		border: 2px solid #f9f9f9
+		border-width: 2px 2px 1px 2px
+		font-size: 11px
+		line-height: 1
+		+placeholder-color(#6b6b6b)
+		+box-shadow(0 1px 0 #adadad)
+		&:focus
+			+placeholder-color(transparent)
+	.search__btn
+		position: absolute
+		+s(search)
+		left: 5px
+		top: 50%
+		margin-top: -6px
 
-
-
-
-
-
-
+// footer
 .footer
 	.footer__links
 		height: 120px
@@ -250,8 +256,10 @@ body
 			height: 100%
 			+hidetext
 	.footer__menu
-	.feedback
-		padding-top: 20px
+
+// feedback
+.feedback
+	padding-top: 20px
 	.feedback__row
 		+clr
 		label
@@ -298,6 +306,7 @@ body
 			position: relative
 			top: 1px
 
+// list
 .list
 	li
 		margin-bottom: 10px
@@ -319,11 +328,19 @@ body
 				&:before
 					+s(circle-h)
 
-
-
+// subnav
 .subnav
 	background: #e6e6e6
 	margin-bottom: 40px
+	&.subnav_mod
+		background: none
+		margin-bottom: 0
+		& > ul
+			width: auto
+			& > .subnav__item
+				float: none
+				margin-left: 0
+				width: auto
 	& > ul
 		+wrap
 		+clr
@@ -385,7 +402,7 @@ body
 			&:before
 				left: 0
 
-
+// content
 .content
 	a
 		color: #d00e53
@@ -393,10 +410,12 @@ body
 		&:hover
 			text-decoration: none
 
+// mrko
 .mrko
 	position: relative
 	margin-left: 47px
 	margin-bottom: 35px
+	font-size: 15px
 	&:before
 		position: absolute
 		top: 0
@@ -405,50 +424,74 @@ body
 		+s(mrko)
 	a
 		display: block
+		font-size: 13px
 
-
+// news
 .news
-.news__title
-	text-transform: uppercase
-	margin-bottom: 1em
-.news__list
-.news__item
-	margin-top: 25px
-	&:first-child
-		margin-top: 0
-.news__meta
-	font-size: 10px
-	margin-bottom: 15px
-.news__date
-.news__divider
-	color: #1aa530
-.news__rubric
-.news__info
+	.news__title
+		text-transform: uppercase
+		margin-bottom: 1em
+	.news__list
+	.news__item
+		margin-top: 25px
+		&:first-child
+			margin-top: 0
+	.news__meta
+		font-size: 10px
+		margin-bottom: 15px
+	.news__date
+	.news__divider
+		color: #1aa530
+	.news__rubric
+	.news__info
+		+clr
+	.news__pic
+		float: left
+		width: 60px
+		margin-right: 20px
+		img
+			display: block
+			max-width: 60px
+			min-height: 45px
+	.news__text
+		overflow: hidden
+		p
+	.news__head
+		font-weight: bold
+
+// breadcrumb
+.breadcrumb
 	+clr
-.news__pic
-	float: left
-	width: 60px
-	margin-right: 20px
-	img
-		display: block
-		max-width: 60px
-		min-height: 45px
-.news__text
-	overflow: hidden
-	p
-.news__head
+	li
+		display: inline
+		margin-left: 4px
+		&:first-child
+			margin-left: 0
+			.breadcrumb__divider
+				display: none
+		&.is-active
+			.breadcrumb__divider
+				color: #131313
+	.breadcrumb__divider
+		margin-right: 4px
+		color: #d00e53
+
+// title
+.title
+	color: #131313
+	font-size: 21px
+	text-transform: uppercase
+	margin-bottom: 0.2em
 	font-weight: bold
 
-
-
-
-
-
-
-
-
-
-
+.h2
+	color: #131313
+	font-size: 14px
+	text-transform: uppercase
+	margin-bottom: 0.5em
+	font-weight: bold
+	&.h2_alt
+		color: #0f8293
 
 
 
