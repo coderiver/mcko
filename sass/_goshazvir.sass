@@ -1,37 +1,34 @@
-.user-wrap
-	.user
+.members
+	.members__item
+		padding-top: 25px
+		border-top: 1px solid #0f8293
+		+clr
 		&:first-child
 			border-top: none
-			padding-top: 5px
-.user
-	padding-top: 25px
-	border-top: 1px solid #0f8293 
-	+clr
-	.user__profile
+	.members__profile
+		float: left
 		width: 220px
 		margin-right: 20px
-		float: left
-	.user__foto
+	.members__photo
 		width: 220px
 		height: 290px
 		margin-bottom: 35px
 		overflow: hidden
 		img
-			// width: 100%
-	.user__block
+			display: block
+			max-width: 220px
+			max-height: 290px
+			margin-left: auto
+			margin-right: auto
+	.members__row
 		margin-bottom: 25px
-		font-size: 13px
-		color: #131313
-		&.user__tel
-			margin-bottom: 10px
-	.user__charge
-		width: 220px
-		float: left
-	.list
+	.members__info
+		overflow: hidden
+	.members__list
 		li
 			a
 				padding-left: 20px
-				line-height: 1.4 
+				line-height: 1.4
 				&:before
 					top: 6px
 					left: 0
