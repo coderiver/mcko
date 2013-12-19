@@ -289,6 +289,13 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .members .members__list li a { padding-left: 20px; line-height: 1.4; }
 .members .members__list li a:before { top: 6px; left: 0; }
 
+.members_scroll .members__photo { margin-bottom: 12px; }
+.members_scroll .navi { margin-bottom: 15px; }
+
+.members_doc .members__item { margin-bottom: 18px; }
+.members_doc .members__photo, .members_doc .scrollable { height: 330px; }
+.members_doc .members__photo img { max-height: 330px; }
+
 .scrollable { position: relative; overflow: hidden; width: 220px; height: 290px; }
 
 .scrollable .items { width: 20000em; position: absolute; }
