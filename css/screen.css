@@ -243,6 +243,12 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .members .members__list li a { padding-left: 20px; line-height: 1.4; }
 .members .members__list li a:before { top: 6px; left: 0; }
 
+.scrollable { position: relative; overflow: hidden; width: 220px; height: 290px; }
+
+.scrollable .items { width: 20000em; position: absolute; }
+
+.items div { float: left; }
+
 .navi { font-size: 0; text-align: center; }
 .navi .navi__prev, .navi .navi__next { display: inline-block; vertical-align: middle; }
 .navi .navi__prev { margin-right: 10px; background: url('../img/icons-s5c3e3b01ac.png') 0 -561px no-repeat; width: 13px; height: 14px; }
