@@ -653,10 +653,88 @@ body
 		margin-top: 3px
 		padding-top: 7px
 
-
-
-
-
+// events
+.events
+	margin-bottom: 30px
+	.events__title
+		margin-bottom: .5em
+	.events__nav
+		margin-bottom: 1em
+		li
+			display: inline-block
+			font-size: 0
+			color: #949494
+			&:first-child
+				.events__divider
+					display: none
+			a
+				display: inline-block
+				font-size: 13px
+				color: #949494
+				text-decoration: underline
+				&:active
+					color: $green
+				&:hover
+					color: $pink
+			&.is-active,
+			&:hover
+				a
+					color: $pink
+				.events__divider
+					color: $pink
+			&:active
+				a
+					color: $green
+				.events__divider
+					color: $green
+		.events__divider
+			display: inline-block
+			padding: 0 4px
+			font-size: 13px
+	.events__items
+		.events__item
+			position: relative
+			+clr
+			margin-top: 24px
+			&:before
+				position: absolute
+				left: 70px
+				top: 0
+				bottom: 0
+				width: 1px
+				background: #909090
+				content: ""
+			&:first-child
+				margin-top: 0
+			& > a
+				text-decoration: none
+				.events__meta
+					color: $dark
+				.events__text
+					color: $dark
+				&:hover
+					.events__text
+						color: $pink
+				&:active
+					.events__text
+						color: $green
+		.events__meta
+			float: left
+			+ag_b
+			line-height: 1
+			padding-right: 13px
+			margin-right: 7px
+		.events__date
+			display: block
+			font-size: 50px
+		.events__day
+			display: block
+			font-size: 15px
+			margin-top: -7px
+			text-transform: uppercase
+		.events__text
+			overflow: hidden
+			font-size: 15px
 
 
 

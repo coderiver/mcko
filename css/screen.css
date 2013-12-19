@@ -243,10 +243,37 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .docs .docs__head:before { position: absolute; top: -2px; left: 0; content: ""; }
 .docs .docs__text { color: #7e7e7e; border-top: 2px solid #bdbdbd; margin-top: 3px; padding-top: 7px; }
 
+.events { margin-bottom: 30px; }
+.events .events__title { margin-bottom: 0.5em; }
+.events .events__nav { margin-bottom: 1em; }
+.events .events__nav li { display: inline-block; font-size: 0; color: #949494; }
+.events .events__nav li:first-child .events__divider { display: none; }
+.events .events__nav li a { display: inline-block; font-size: 13px; color: #949494; text-decoration: underline; }
+.events .events__nav li a:active { color: #0f8293; }
+.events .events__nav li a:hover { color: #d00e53; }
+.events .events__nav li.is-active a, .events .events__nav li:hover a { color: #d00e53; }
+.events .events__nav li.is-active .events__divider, .events .events__nav li:hover .events__divider { color: #d00e53; }
+.events .events__nav li:active a { color: #0f8293; }
+.events .events__nav li:active .events__divider { color: #0f8293; }
+.events .events__nav .events__divider { display: inline-block; padding: 0 4px; font-size: 13px; }
+.events .events__items .events__item { position: relative; *zoom: 1; margin-top: 24px; }
+.events .events__items .events__item:after { content: " "; display: table; clear: both; }
+.events .events__items .events__item:before { position: absolute; left: 70px; top: 0; bottom: 0; width: 1px; background: #909090; content: ""; }
+.events .events__items .events__item:first-child { margin-top: 0; }
+.events .events__items .events__item > a { text-decoration: none; }
+.events .events__items .events__item > a .events__meta { color: #131313; }
+.events .events__items .events__item > a .events__text { color: #131313; }
+.events .events__items .events__item > a:hover .events__text { color: #d00e53; }
+.events .events__items .events__item > a:active .events__text { color: #0f8293; }
+.events .events__items .events__meta { float: left; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; line-height: 1; padding-right: 13px; margin-right: 7px; }
+.events .events__items .events__date { display: block; font-size: 50px; }
+.events .events__items .events__day { display: block; font-size: 15px; margin-top: -7px; text-transform: uppercase; }
+.events .events__items .events__text { overflow: hidden; font-size: 15px; }
+
 .l { display: block; width: 940px; margin-left: auto; margin-right: auto; margin-bottom: 20px; *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-left { float: left; width: 220px; margin-right: -220px; }
-.l .l-main { float: left; margin-left: 240px; margin-right: 240px; }
+.l .l-main { float: left; margin-left: 240px; width: 460px; }
 .l .l-right { float: right; width: 220px; margin-left: -220px; }
 
 .members { font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; }
