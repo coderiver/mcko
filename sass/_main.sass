@@ -1,9 +1,9 @@
 body
 	font-size: 13px
 	+ag_m
-	color: #131313
+	color: $dark
 	line-height: 1.4
-	background: #fff
+	background: $white
 	min-width: 960px
 
 // main wrapper
@@ -30,31 +30,31 @@ body
 				display: none
 		&.is-active
 			.breadcrumb__divider
-				color: #131313
+				color: $dark
 	.breadcrumb__divider
 		margin-right: 4px
-		color: #d00e53
+		color: $pink
 
 // title
 .title
-	color: #131313
+	color: $dark
 	font-size: 21px
 	text-transform: uppercase
 	margin-bottom: 0.2em
 	+ag_b
 
 .t2
-	color: #131313
+	color: $dark
 	font-size: 14px
 	text-transform: uppercase
 	margin-bottom: 0.5em
 	+ag_b
 	&.t2_alt
-		color: #0f8293
+		color: $green
 
 .t3
 	font-size: 13px
-	color: #131313
+	color: $dark
 	+ag_b
 	text-transform: uppercase
 
@@ -67,7 +67,7 @@ body
 			position: relative
 			display: inline-block
 			padding-left: 30px
-			color: #131313
+			color: $dark
 			text-decoration: none
 			&:before
 				position: absolute
@@ -76,14 +76,20 @@ body
 				+s(circle)
 				content: ""
 			&:hover
-				color: #d00e53
+				color: $pink
+				text-decoration: none
 				&:before
 					+s(circle-h)
+			&:active
+				color: $green
+				text-decoration: none
+				&:before
+					+s(circle-a)
 
 // bar
 .bar
 	background: #0f9287
-	color: #fff
+	color: $white
 	height: 30px
 	line-height: 30px
 	.bar-i
@@ -105,17 +111,17 @@ body
 		margin-left: 15px
 		border-bottom: 1px solid #68bab3
 		background: none
-		color: #fff
+		color: $white
 		+ag_r
-		+placeholder-color(#fff)
+		+placeholder-color($white)
 		&:focus
 			+placeholder-color(transparent)
 	.login__btn
 		position: relative
 		margin-left: 10px
-		color: #fff
+		color: $white
 		background: none
-		border-bottom: 1px dotted #fff
+		border-bottom: 1px dotted $white
 		+ag_r
 		&:active
 			top: 1px
@@ -136,7 +142,7 @@ body
 		&:hover
 			text-decoration: none
 		&.is-active
-			color: #fff
+			color: $white
 			font-weight: bold
 			text-decoration: none
 
@@ -162,7 +168,7 @@ body
 		margin-left: 320px
 	.header__slogan
 		font-size: 26px
-		color: #7d7d7d
+		color: $grey
 		margin-bottom: 24px
 		line-height: 1
 		+os
@@ -174,11 +180,12 @@ body
 		font-size: 12px
 		+os
 		a
-			color: #f7a72b
+			color: $dark
 			text-decoration: underline
 			&:hover
-				color: #000
-				text-decoration: none
+				color: $yellow
+			&:active
+				color: $pink
 
 // nav
 .nav
@@ -189,20 +196,20 @@ body
 		float: left
 		margin-left: 28px
 		font-size: 13px
-		color: #000
+		color: $black
 		&:first-child
 			margin-left: 0
 		&:hover
 			.nav__drop
 				display: block
 			& > a
-				color: #f6a01e
+				color: $yellow
 				text-decoration: none
 		a
-			color: #000
+			color: $black
 			text-decoration: underline
 			&:hover
-				color: #f6a01e
+				color: $yellow
 				text-decoration: none
 	.nav__drop
 		display: none
@@ -225,14 +232,14 @@ body
 			&:first-child
 				margin-left: 0
 			a
-				color: #7f7f7f
+				color: $grey
 				text-decoration: none
 				&:hover
-					color: #f6a01e
+					color: $yellow
 
 // subnav
 .subnav
-	background: #e6e6e6
+	background: $lgrey
 	margin-bottom: 40px
 	+ag_r
 	&.subnav_mod
@@ -295,7 +302,7 @@ body
 					background: #d00e53
 	.subnav__title
 		font-size: 13px
-		color: #131313
+		color: $dark
 		text-transform: uppercase
 		margin-bottom: 0.5em
 		+ag_b
@@ -338,9 +345,9 @@ body
 	.footer__links
 		height: 120px
 		line-height: 120px
-		background: #e6e6e6
+		background: $lgrey
 		font-size: 13px
-		color: #000
+		color: $black
 	.footer__links-holder
 		+wrap
 		+clr
@@ -357,7 +364,7 @@ body
 			top: 12px
 			bottom: 12px
 			width: 1px
-			background: #0f8293
+			background: $green
 			content: ""
 		i
 			display: inline-block
@@ -439,26 +446,31 @@ body
 	.feedback__btn
 		float: right
 		border: 1px solid #959595
-		background-color: #0f8193
+		background-color: $green
 		color: #fff
 		+box
 		+ag_m
 		height: 36px
 		padding: 0 17px
 		font-size: 15px
-		&:hover, &:active
-			background-color: #1d9629
+		&:hover
+			background-color: $pink
 		&:active
+			background-color: $grey
 			position: relative
 			top: 1px
 
 // content
 .content
 	a
-		color: #d00e53
+		color: $pink
 		text-decoration: underline
 		&:hover
-			text-decoration: none
+			color: $green
+			text-decoration: underline
+		&:active
+			color: $grey
+			text-decoration: underline
 
 // mrko
 .mrko
@@ -498,6 +510,16 @@ body
 	.news__rubric
 	.news__info
 		+clr
+		& > a
+			text-decoration: none
+			&:hover
+				.news__head
+					color: $pink
+					text-decoration: none
+			&:active
+				.news__head
+					color: $green
+					text-decoration: none
 	.news__pic
 		float: left
 		width: 60px
@@ -507,12 +529,14 @@ body
 			max-width: 60px
 			min-height: 45px
 	.news__text
+		color: $dark
 		overflow: hidden
 		+ag_l
 		p
 			+ag_l
 	.news__head
 		+ag_b
+		color: $dark
 
 // hentry
 .hentry
@@ -525,10 +549,22 @@ body
 	.hentry__title
 		margin-bottom: 0.5em
 		+ag_b
+	.hentry__body
+		& > a
+			text-decoration: none
+			.hentry__subtitle
+				color: $dark
+			&:hover
+				.hentry__subtitle
+					color: $pink
+			&:active
+				.hentry__subtitle
+					color: $grey
 	.hentry__subtitle
 		+ag_b
 		margin-bottom: 0.5em
 	.hentry__text
+		color: $dark
 	.hentry__meta
 		+text-overflow
 		margin-bottom: 0.5em
@@ -536,7 +572,7 @@ body
 	.hentry__date
 		+ag_l
 	.hentry__divider
-		color: #1aa530
+		color: $lgreen
 	.hentry__link
 	.hentry__more
 		margin-top: 0.5em
