@@ -36,16 +36,17 @@
 					top: 6px
 					left: 0
 
-// .scrollable
-// 	position: relative
-// 	overflow: hidden
-// 	width: 220px
-// 	height: 290px
-// .scrollable .items
-// 	width: 20000em
-// 	position: absolute
-// .items div
-// 	float: left
+// scrollable
+.scrollable
+	position: relative
+	overflow: hidden
+	width: 220px
+	height: 290px
+.scrollable .items
+	width: 20000em
+	position: absolute
+.items div
+	float: left
 
 // navi
 .navi
@@ -57,9 +58,13 @@
 	.navi__prev
 		margin-right: 10px
 		+s(icon-arr-l)
-		&:hover, &.is-active
+		&:hover
+			+s(icon-arr-l_d)
+		&.disabled
 			+s(icon-arr-l_h)
 	.navi__next
 		+s(icon-arr-r)
-		&:hover, &.is-active
+		&:hover
+			+s(icon-arr-r_d)
+		&.disabled
 			+s(icon-arr-r_h)
