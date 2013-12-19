@@ -23,7 +23,7 @@
 			margin-right: auto
 	.members__row
 		margin-bottom: 25px
-		p > strong
+		strong
 			+ag_b
 	.members__info
 		overflow: hidden
@@ -35,3 +35,31 @@
 				&:before
 					top: 6px
 					left: 0
+
+// .scrollable
+// 	position: relative
+// 	overflow: hidden
+// 	width: 220px
+// 	height: 290px
+// .scrollable .items
+// 	width: 20000em
+// 	position: absolute
+// .items div
+// 	float: left
+
+// navi
+.navi
+	font-size: 0
+	text-align: center
+	.navi__prev, .navi__next
+		display: inline-block
+		vertical-align: middle
+	.navi__prev
+		margin-right: 10px
+		+s(icon-arr-l)
+		&:hover, &.is-active
+			+s(icon-arr-l_h)
+	.navi__next
+		+s(icon-arr-r)
+		&:hover, &.is-active
+			+s(icon-arr-r_h)
