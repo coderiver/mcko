@@ -55,16 +55,20 @@
 	.navi__prev, .navi__next
 		display: inline-block
 		vertical-align: middle
+		&:active
+			cursor: pointer
+		&.disabled
+			cursor: default 
 	.navi__prev
 		margin-right: 10px
 		+s(icon-arr-l)
 		&:hover
-			+s(icon-arr-l_d)
-		&.disabled
 			+s(icon-arr-l_h)
+		&:active
+			+s(icon-arr-l_d)
 	.navi__next
 		+s(icon-arr-r)
 		&:hover
-			+s(icon-arr-r_d)
-		&.disabled
 			+s(icon-arr-r_h)
+		&:active
+			+s(icon-arr-r_d)
