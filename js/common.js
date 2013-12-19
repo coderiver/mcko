@@ -1,3 +1,4 @@
 $(document).ready(function() {
-	$(".scrollable").scrollable();
+	$(".scrollable").scrollable(); 
+
 });
