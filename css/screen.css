@@ -303,7 +303,7 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .items div { float: left; }
 
 .navi { font-size: 0; text-align: center; }
-.navi .navi__prev, .navi .navi__next { display: inline-block; vertical-align: middle; }
+.navi .navi__prev, .navi .navi__next { display: inline-block; vertical-align: middle; cursor: pointer; }
 .navi .navi__prev:active, .navi .navi__next:active { cursor: pointer; }
 .navi .navi__prev.disabled, .navi .navi__next.disabled { cursor: default; }
 .navi .navi__prev { margin-right: 10px; background: url('../img/icons-s7725c9dbf5.png') 0 -736px no-repeat; width: 13px; height: 14px; }
