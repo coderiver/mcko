@@ -36,6 +36,7 @@
 					top: 6px
 					left: 0
 
+// scrollable
 .scrollable
 	position: relative
 	overflow: hidden
@@ -57,9 +58,13 @@
 	.navi__prev
 		margin-right: 10px
 		+s(icon-arr-l)
-		&:hover, &.is-active
+		&:hover
+			+s(icon-arr-l_d)
+		&.disabled
 			+s(icon-arr-l_h)
 	.navi__next
 		+s(icon-arr-r)
-		&:hover, &.is-active
+		&:hover
+			+s(icon-arr-r_d)
+		&.disabled
 			+s(icon-arr-r_h)
