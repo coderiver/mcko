@@ -310,6 +310,7 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 
 .members_doc .members__item { margin-bottom: 18px; }
 .members_doc .members__photo, .members_doc .js-scrollable__container { height: 330px; }
+.members_doc .members__photo { margin-bottom: 15px; }
 .members_doc .members__photo img { max-height: 330px; }
 
 .js-scrollable__container { width: 220px; height: 290px; position: relative; overflow: hidden; }
