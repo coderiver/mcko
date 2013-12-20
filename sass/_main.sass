@@ -850,6 +850,124 @@ body
 		color: #b0b0b0
 		font-size: 11px
 
+// photo
+.photo
+	.photo__title
+	.photo__years
+		margin-bottom: 1em
+		li
+			display: inline-block
+			color: $grey
+			a
+				color: $grey
+				&:hover, &.is-active
+					text-decoration: none
+					color: $pink
+				&:active
+					text-decoration: none
+					color: $green
+			&:first-child
+				.photo__divider
+					display: none
+		.photo__divider
+			padding: 0 4px 0 0
+	.photo__content
+	.photo__list
+	.photo__row
+		+clr
+		margin-bottom: 20px
+	.photo__gallery
+		float: left
+		width: 460px
+		margin-right: 20px
+		text-align: center
+		border-bottom: 1px solid $green
+		padding-bottom: 10px
+		.photo__gallery-list
+			margin-left: -20px
+			+clr
+		.photo__pic
+			position: relative
+			float: left
+			width: 220px
+			height: 145px
+			margin-left: 20px
+			margin-bottom: 20px
+			font-size: 13px
+			&:hover
+				&:before
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					content: ""
+					opacity: 0.8
+					background: $green
+				.photo__zoom
+					display: block
+		.photo__zoom
+			display: none
+			line-height: 145px
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			text-align: center
+			color: $white
+			i
+				+s(zoom)
+				display: inline-block
+				vertical-align: middle
+	.photo__more
+	.photo__info
+		overflow: hidden
+		font-size: 13px
+	.photo__title
+		font-size: 14px
+	.photo__date
+		color: $grey
+		margin-bottom: 0.5em
+
+a.link
+	border-bottom: 1px dotted $grey
+	text-decoration: none
+	color: $grey
+	&:hover
+		border-bottom: 1px dotted $pink
+		text-decoration: none
+		color: $pink
+	&:active
+		border-bottom: 1px dotted $green
+		text-decoration: none
+		color: $green
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
