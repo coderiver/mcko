@@ -131,7 +131,7 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .subnav.subnav_mod > ul > .subnav__item { float: none; margin-left: 0; width: auto; }
 .subnav > ul { display: block; width: 940px; margin-left: auto; margin-right: auto; *zoom: 1; }
 .subnav > ul:after { content: " "; display: table; clear: both; }
-.subnav > ul > .subnav__item { position: relative; float: left; width: 220px; margin-left: 20px; min-height: 340px; padding-top: 128px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.subnav > ul > .subnav__item { position: relative; float: left; width: 220px; margin-left: 20px; min-height: 340px; padding-top: 128px; padding-bottom: 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .subnav > ul > .subnav__item:first-child { margin-left: 0; }
 .subnav > ul > .subnav__item:after { position: absolute; height: 6px; left: 0; bottom: 0; width: 100%; content: ""; }
 .subnav > ul > .subnav__item:before { position: absolute; left: 50%; margin-left: -30px; content: ""; }
