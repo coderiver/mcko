@@ -276,8 +276,8 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .events .events__day { display: block; font-size: 15px; margin-top: -7px; text-transform: uppercase; }
 .events .events__text { overflow: hidden; font-size: 15px; }
 
-.topic .topic__title { margin-bottom: 0.5em; }
-.topic .topic__opening { font-size: 14px; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; }
+.topic h1 { color: #131313; font-size: 21px; text-transform: uppercase; margin-bottom: 0.5em; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; }
+.topic h2 { font-size: 14px; margin-bottom: 1em; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; }
 .topic p { font-size: 13px; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; margin-bottom: 1em; }
 .topic figure { margin-bottom: 1.5em; }
 .topic figure p { padding: 0; margin: 0 0 0.7em; }
@@ -293,7 +293,7 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .webinar .webinar__content:after { content: " "; display: table; clear: both; }
 .webinar .webinar__pic { float: left; width: 140px; margin-right: 20px; }
 .webinar .webinar__pic a { display: block; height: 100%; }
-.webinar .webinar__pic img { display: block; max-width: 140px; border: 1px solid #e0e0e0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.webinar .webinar__pic img { display: block; max-width: 140px; border: 1px solid #e0e0e0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-left: auto; margin-right: auto; }
 .webinar .webinar__info { overflow: hidden; }
 .webinar .webinar__head { position: relative; font-size: 15px; line-height: 1.2; margin-bottom: 0.2em; }
 .webinar .webinar__head:after { display: block; width: 140px; height: 1px; margin-top: 0.2em; background: #d00e53; content: ""; }
