@@ -946,8 +946,81 @@ a.link
 
 
 
-
-
+.slider
+	position: relative
+	.slider__pager
+		padding: 17px 0
+		text-align: center
+		line-height: 1
+		span
+			+hidetext
+			+s(c-nav-a)
+			+gray
+			display: inline-block
+			vertical-align: top
+			margin: 0 3px
+			&:hover, &.cycle-pager-active
+				+gray-zero
+				cursor: pointer
+			&.cycle-pager-active
+				cursor: default
+	.slider__nav
+		span
+			position: absolute
+			top: 170px
+			+hidetext
+			display: block
+			+s(c-move-h)
+			z-index: 101
+			&:hover
+				+s(c-move)
+				cursor: pointer
+		.slider__prev
+			left: 0
+		.slider__next
+			right: 0
+			+rotate(180)
+	.slider__item
+		overflow: hidden
+		height: 425px
+		width: 100%
+		img
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			min-height: 425px
+			height: auto
+			+cover
+	.slider__info
+		width: 540px
+		position: absolute
+		color: $white
+		background: $green
+		opacity: 0.9
+		left: 50%
+		margin-left: -71px
+		bottom: 0
+		padding: 30px 25px 20px 35px
+		+box
+		a
+			color: $white
+			text-decoration: none
+			&:hover
+				color: $white
+				text-decoration: none
+		p
+			margin-bottom: 1em
+			+ag_r
+			a
+				color: $white
+				text-decoration: underline
+				&:hover
+					color: $white
+					text-decoration: none
+	.slider__title
+		font-size: 34px
+		margin-bottom: 0.2em
 
 
 
