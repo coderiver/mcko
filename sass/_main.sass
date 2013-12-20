@@ -34,52 +34,13 @@ body
 		margin-right: 4px
 		color: $pink
 
-// title
+// titles
 .title
 	color: $dark
 	font-size: 21px
 	text-transform: uppercase
 	margin-bottom: 0.2em
 	+ag_b
-
-// topic
-.topic
-	.topic__title
-		margin-bottom: 0.5em
-	.topic__opening
-		font-size: 14px
-		+ag_m
-	p
-		font-size: 13px
-		+ag_r
-		margin-bottom: 1em
-	figure
-		margin-bottom: 1.5em
-		p
-			padding: 0
-			margin: 0 0 .7em
-		img
-			display: block
-			max-width: 460px
-			margin-left: auto
-			margin-right: auto
-	figcaption
-		text-align: right
-		+ag_i
-		font-size: 11px
-		color: $black
-	blockquote
-		border: 1px solid $orange
-		border-width: 1px 0
-		margin: 1.5em 0
-		padding: 0 2em
-		p
-			text-transform: uppercase
-			text-align: center
-			font-size: 13px
-			color: $green
-			+ag_b
-			margin: 1.5em 0
 .t2
 	color: $dark
 	font-size: 14px
@@ -88,7 +49,6 @@ body
 	+ag_b
 	&.t2_alt
 		color: $green
-
 .t3
 	font-size: 13px
 	color: $dark
@@ -780,7 +740,90 @@ body
 		overflow: hidden
 		font-size: 15px
 
+// topic
+.topic
+	.topic__title
+		margin-bottom: 0.5em
+	.topic__opening
+		font-size: 14px
+		+ag_m
+	p
+		font-size: 13px
+		+ag_r
+		margin-bottom: 1em
+	figure
+		margin-bottom: 1.5em
+		p
+			padding: 0
+			margin: 0 0 .7em
+		img
+			display: block
+			max-width: 460px
+			margin-left: auto
+			margin-right: auto
+	figcaption
+		text-align: right
+		+ag_i
+		font-size: 11px
+		color: $black
+	blockquote
+		border: 1px solid $orange
+		border-width: 1px 0
+		margin: 1.5em 0
+		padding: 0 2em
+		p
+			text-transform: uppercase
+			text-align: center
+			font-size: 13px
+			color: $green
+			+ag_b
+			margin: 1.5em 0
 
+// webinar
+.webinar
+	margin-bottom: 30px
+	.webinar__title
+		margin-bottom: 0.5em
+	.webinar__timer
+		color: $pink
+	.webinar__content
+		+clr
+	.webinar__pic
+		float: left
+		width: 140px
+		margin-right: 20px
+		a
+			display: block
+			height: 100%
+		img
+			display: block
+			max-width: 140px
+			border: 1px solid #e0e0e0
+			+box
+	.webinar__info
+		overflow: hidden
+	.webinar__head
+		position: relative
+		font-size: 15px
+		line-height: 1.2
+		margin-bottom: 0.2em
+		&:after
+			display: block
+			width: 140px
+			height: 1px
+			margin-top: 0.2em
+			background: $pink
+			content: ""
+		a
+			text-decoration: none
+			color: $dark
+			&:hover
+				color: $pink
+			&:active
+				color: $green
+	.webinar__speaker
+		color: #b0b0b0
+		font-size: 11px
 
 
 

@@ -64,16 +64,6 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 
 .title { color: #131313; font-size: 21px; text-transform: uppercase; margin-bottom: 0.2em; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; }
 
-.topic .topic__title { margin-bottom: 0.5em; }
-.topic .topic__opening { font-size: 14px; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; }
-.topic p { font-size: 13px; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; margin-bottom: 1em; }
-.topic figure { margin-bottom: 1.5em; }
-.topic figure p { padding: 0; margin: 0 0 0.7em; }
-.topic figure img { display: block; max-width: 460px; margin-left: auto; margin-right: auto; }
-.topic figcaption { text-align: right; font-family: "PFAgoraSlabPro-Italic"; font-weight: normal; font-style: normal; font-size: 11px; color: black; }
-.topic blockquote { border: 1px solid #f4961e; border-width: 1px 0; margin: 1.5em 0; padding: 0 2em; }
-.topic blockquote p { text-transform: uppercase; text-align: center; font-size: 13px; color: #0f8293; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; margin: 1.5em 0; }
-
 .t2 { color: #131313; font-size: 14px; text-transform: uppercase; margin-bottom: 0.5em; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; }
 .t2.t2_alt { color: #0f8293; }
 
@@ -285,6 +275,32 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .events .events__date { display: block; font-size: 50px; }
 .events .events__day { display: block; font-size: 15px; margin-top: -7px; text-transform: uppercase; }
 .events .events__text { overflow: hidden; font-size: 15px; }
+
+.topic .topic__title { margin-bottom: 0.5em; }
+.topic .topic__opening { font-size: 14px; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; }
+.topic p { font-size: 13px; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; margin-bottom: 1em; }
+.topic figure { margin-bottom: 1.5em; }
+.topic figure p { padding: 0; margin: 0 0 0.7em; }
+.topic figure img { display: block; max-width: 460px; margin-left: auto; margin-right: auto; }
+.topic figcaption { text-align: right; font-family: "PFAgoraSlabPro-Italic"; font-weight: normal; font-style: normal; font-size: 11px; color: black; }
+.topic blockquote { border: 1px solid #f4961e; border-width: 1px 0; margin: 1.5em 0; padding: 0 2em; }
+.topic blockquote p { text-transform: uppercase; text-align: center; font-size: 13px; color: #0f8293; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; margin: 1.5em 0; }
+
+.webinar { margin-bottom: 30px; }
+.webinar .webinar__title { margin-bottom: 0.5em; }
+.webinar .webinar__timer { color: #d00e53; }
+.webinar .webinar__content { *zoom: 1; }
+.webinar .webinar__content:after { content: " "; display: table; clear: both; }
+.webinar .webinar__pic { float: left; width: 140px; margin-right: 20px; }
+.webinar .webinar__pic a { display: block; height: 100%; }
+.webinar .webinar__pic img { display: block; max-width: 140px; border: 1px solid #e0e0e0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.webinar .webinar__info { overflow: hidden; }
+.webinar .webinar__head { position: relative; font-size: 15px; line-height: 1.2; margin-bottom: 0.2em; }
+.webinar .webinar__head:after { display: block; width: 140px; height: 1px; margin-top: 0.2em; background: #d00e53; content: ""; }
+.webinar .webinar__head a { text-decoration: none; color: #131313; }
+.webinar .webinar__head a:hover { color: #d00e53; }
+.webinar .webinar__head a:active { color: #0f8293; }
+.webinar .webinar__speaker { color: #b0b0b0; font-size: 11px; }
 
 .l { display: block; width: 940px; margin-left: auto; margin-right: auto; margin-bottom: 20px; *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
