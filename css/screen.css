@@ -330,7 +330,7 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .js-scrollable__navi .js-scrollable__navi-next:hover { background: url('../img/icons-s1fcecf528c.png') 0 -889px no-repeat; width: 13px; height: 14px; }
 .js-scrollable__navi .js-scrollable__navi-next:active { background: url('../img/icons-s1fcecf528c.png') 0 -819px no-repeat; width: 13px; height: 14px; }
 
-.form { border: 3px solid #f7a72b; }
+.form { padding: 15px 12px 25px; border: 3px solid #f7a72b; }
 
 [class^="icon-"], [class*=" icon-"] { display: inline-block; vertical-align: middle; }
 
