@@ -39,33 +39,35 @@
 .members_scroll
 	.members__photo
 		margin-bottom: 12px
-	.navi
+	.js-scrollable__navi
 		margin-bottom: 15px
 
 .members_doc
 	.members__item
 		margin-bottom: 18px
-	.members__photo,  .scrollable
+	.members__photo,  .js-scrollable__container
 		height: 330px
+	.members__photo
+		margin-bottom: 15px
 	.members__photo img
 		max-height: 330px 
 // scrollable
-.scrollable
-	position: relative
-	overflow: hidden
+.js-scrollable__container
 	width: 220px
 	height: 290px
-.scrollable .items
+	position: relative
+	overflow: hidden
+.js-scrollable__container .js-scrollable__in
 	width: 20000em
 	position: absolute
-.items div
+.js-scrollable__in div
 	float: left
 
 // navi
-.navi
+.js-scrollable__navi
 	font-size: 0
 	text-align: center
-	.navi__prev, .navi__next
+	.js-scrollable__navi-prev, .js-scrollable__navi-next
 		display: inline-block
 		vertical-align: middle
 		cursor: pointer
@@ -73,16 +75,21 @@
 			cursor: pointer
 		&.disabled
 			cursor: default 
-	.navi__prev
+	.js-scrollable__navi-prev
 		margin-right: 10px
 		+s(icon-arr-l)
 		&:hover
 			+s(icon-arr-l_h)
 		&:active
 			+s(icon-arr-l_d)
-	.navi__next
+	.js-scrollable__navi-next
 		+s(icon-arr-r)
 		&:hover
 			+s(icon-arr-r_h)
 		&:active
 			+s(icon-arr-r_d)
+
+// form
+.form
+	padding: 15px 12px 25px
+	border: 3px solid #f7a72b
