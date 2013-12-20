@@ -39,6 +39,10 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 .ag_l { font-family: "PFAgoraSlabPro-Light"; font-weight: normal; font-style: normal; }
 
+@font-face { font-family: "PFAgoraSlabPro-Italic"; src: url("../fonts/PFAgoraSlabPro-Italic.eot"); src: url("../fonts/PFAgoraSlabPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/PFAgoraSlabPro-Italic.woff") format("woff"), url("../fonts/PFAgoraSlabPro-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+.ag_i { font-family: "PFAgoraSlabPro-Italic"; font-weight: normal; font-style: normal; }
+
 .font-stacks { background-color: #e3e6e8; }
 .font-stacks .out { padding: 20px 0; }
 .font-stacks article { width: 700px; margin-left: auto; margin-right: auto; background-color: white; border: 1px solid rgba(12, 13, 13, 0.2); box-shadow: 0 0 3px rgba(12, 13, 13, 0.1); border-radius: 5px; padding: 1em 20px 0.5em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; margin-bottom: 20px; }
@@ -59,6 +63,16 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 .breadcrumb .breadcrumb__divider { margin-right: 4px; color: #d00e53; }
 
 .title { color: #131313; font-size: 21px; text-transform: uppercase; margin-bottom: 0.2em; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; }
+
+.topic .topic__title { margin-bottom: 0.5em; }
+.topic .topic__opening { font-size: 14px; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; }
+.topic p { font-size: 13px; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; margin-bottom: 1em; }
+.topic figure { margin-bottom: 1.5em; }
+.topic figure p { padding: 0; margin: 0 0 0.7em; }
+.topic figure img { display: block; max-width: 460px; margin-left: auto; margin-right: auto; }
+.topic figcaption { text-align: right; font-family: "PFAgoraSlabPro-Italic"; font-weight: normal; font-style: normal; font-size: 11px; color: black; }
+.topic blockquote { border: 1px solid #f4961e; border-width: 1px 0; margin: 1.5em 0; padding: 0 2em; }
+.topic blockquote p { text-transform: uppercase; text-align: center; font-size: 13px; color: #0f8293; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; margin: 1.5em 0; }
 
 .t2 { color: #131313; font-size: 14px; text-transform: uppercase; margin-bottom: 0.5em; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; }
 .t2.t2_alt { color: #0f8293; }
