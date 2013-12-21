@@ -3,7 +3,7 @@
 	.account__in
 		width: 960px 
 		margin: 0 auto 
-		padding: 17px 0 63px 0
+		padding: 58px 0 63px 0
 		+clr
 		position: relative
 	.account__profile
@@ -42,6 +42,7 @@
 		a
 			text-decoration: none
 			color: #fff 
+			margin: 0 3px 
 	.account__webinars
 		width: 400px 
 		float: left
@@ -68,3 +69,56 @@
 			position: absolute
 			right: 0
 			bottom: 0  
+	.account__scroll
+		max-height: 268px 
+		overflow: auto
+		padding-right: 20px 
+		
+	.webinarsmall
+		border-radius: 5px
+		background-color: #c14d93
+		margin-bottom: 5px 
+		height: 63px 
+		color: #fff
+		text-decoration: none
+		font-size: 13px
+		display: block
+		.webinarsmall__date
+			display: inline-block
+			margin-left: 13px 
+			width: 62px 
+			padding: 8px 0
+			vertical-align: middle
+			font-size: 11px 
+			line-height: 1 
+			text-transform: uppercase
+			strong
+				display: block
+				font-size: 36px 
+				line-height: 1 
+				+ag_b
+		.webinarsmall__title
+			display: inline-block
+			width: 270px 
+			padding: 8px 0 
+			vertical-align: middle
+	.file
+		background: #1F8ECD
+		border-radius: 5px
+		font-size: 13px  
+		color: #fff
+		text-decoration: none
+		display: block
+		height: 63px - 13px
+		padding: 13px 0 0 0
+		margin-bottom: 5px 
+		.file__title
+			display: inline-block
+			width: 212px 
+			vertical-align: middle
+		.file__type
+			+s(pdficon)
+			display: inline-block
+			margin-left: 18px
+			margin-right: 14px  
+			vertical-align: middle
