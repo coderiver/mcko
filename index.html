@@ -8,6 +8,8 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -103,6 +105,75 @@
 	</div>
 </div>
 <!-- end header -->
+<!-- begin slider -->
+<div class="slider">
+	<div class="cycle-slideshow"
+	data-cycle-fx="scrollHorz"
+	data-cycle-timeout="6000"
+	data-cycle-slides="> div"
+	data-cycle-pager=".slider__pager"
+	data-cycle-prev=".cycle-prev"
+	data-cycle-next=".cycle-next"
+	data-pause-on-hover="true"
+	>
+		<div class="slider__item">
+			<img src="img/slider-1.jpg" alt="slide">
+			<div class="slider__info">
+				<a href="#">
+					<div class="slider__title">Ученье свет, а неученье тьма</div>
+					<p>За последние несколько лет в системе образования России произошли значительные изменения. И сейчас продолжаются обсуждения новой реформы школьного образования.</p>
+					<p><a href="#">Посмотреть комментарии специалистов</a></p>
+				</a>
+			</div>
+		</div>
+		<div class="slider__item">
+			<img src="img/slider-2.jpg" alt="slide">
+			<div class="slider__info">
+				<a href="#">
+					<div class="slider__title">Ученье свет, а неученье тьма</div>
+					<p>За последние несколько лет в системе образования России произошли значительные изменения. И сейчас продолжаются обсуждения новой реформы школьного образования.</p>
+					<p><a href="#">Посмотреть комментарии специалистов</a></p>
+				</a>
+			</div>
+		</div>
+		<div class="slider__item">
+			<img src="img/slider-1.jpg" alt="slide">
+			<div class="slider__info">
+				<a href="#">
+					<div class="slider__title">Ученье свет, а неученье тьма</div>
+					<p>За последние несколько лет в системе образования России произошли значительные изменения. И сейчас продолжаются обсуждения новой реформы школьного образования.</p>
+					<p><a href="#">Посмотреть комментарии специалистов</a></p>
+				</a>
+			</div>
+		</div>
+		<div class="slider__item">
+			<img src="img/slider-2.jpg" alt="slide">
+			<div class="slider__info">
+				<a href="#">
+					<div class="slider__title">Ученье свет, а неученье тьма</div>
+					<p>За последние несколько лет в системе образования России произошли значительные изменения. И сейчас продолжаются обсуждения новой реформы школьного образования.</p>
+					<p><a href="#">Посмотреть комментарии специалистов</a></p>
+				</a>
+			</div>
+		</div>
+		<div class="slider__item">
+			<img src="img/slider-1.jpg" alt="slide">
+			<div class="slider__info">
+				<a href="#">
+					<div class="slider__title">Ученье свет, а неученье тьма</div>
+					<p>За последние несколько лет в системе образования России произошли значительные изменения. И сейчас продолжаются обсуждения новой реформы школьного образования.</p>
+					<p><a href="#">Посмотреть комментарии специалистов</a></p>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="slider__pager"></div>
+	<div class="slider__nav">
+		<span class="slider__prev cycle-prev">prev</span>
+		<span class="slider__next cycle-next">next</span>
+	</div>
+</div>
+<!-- end slider -->
 <!-- begin subnav -->
 <div class="subnav">
 	<ul>
