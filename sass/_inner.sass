@@ -255,3 +255,79 @@
 	&:focus
 		border: 1px solid darken($col,15%)
 		@include box-shadow(inset 0 0px 1px darken($col,5%))
+		
+
+//////////////////////////////////////// * vebinar.html * ////////////////////////////////////////
+.vebinar
+	padding-bottom: 10px
+.vebinar__nav
+	margin-bottom: 15px
+	+clr
+	li
+		float: left
+		margin-right: 30px
+		&.is-active
+			a
+				color: #000
+				text-decoration: none
+				&:hover
+					color: #D00E53
+				&:active
+					color: #0f8293
+	a
+		font-size: 13px
+		color: #7E7E7E 
+		+ag_m
+		&:hover
+			color: #D00E53
+		&:active
+			color: #0f8293
+
+.vebinar__in
+	li
+		margin-bottom: 15px
+		&.is-active
+			.events
+				color: #000 
+	.events
+		color: #c7c7c7 
+
+	
+.vebinar__left
+	position: relative
+	vertical-align: top
+.vebinar__date
+	width: 60px
+	position: relative
+	vertical-align: top
+	display: inline-block
+.vebinar__tree
+	width: 8px
+	height: 8px
+	border-radius: 50%
+	background: #c7c7c7
+	display: inline-block
+	margin-left: 20px
+	&:before
+		content: ""
+		width: 1px
+		background: #c7c7c7
+		position: absolute
+		left: 23.5px
+		top: 70px
+		bottom: -10px
+	&:after
+		content: ""
+		width: 8px
+		height: 8px
+		border-radius: 50%
+		background: #c7c7c7
+		position: absolute
+		bottom: -17px
+		left: 20px
+
+.vebinar__item
+	min-width: 600px
+	min-height: 100px
+	overflow: hidden
+	margin-left: 15px
