@@ -516,6 +516,8 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .account__profile .account__avatar { margin-bottom: 10px; }
 .account__profile h2 { font-size: 21px; font-weight: normal; line-height: 1.2; margin-top: 8px; margin-bottom: 12px; }
 
+.account__content { overflow: hidden; }
+
 .account__head { margin-bottom: 15px; text-transform: uppercase; }
 .account__head a { color: #131313; text-decoration: none; margin: 0 3px; }
 .account__head a:hover, .account__head a.is-active { color: #c14d94; text-decoration: none; }
