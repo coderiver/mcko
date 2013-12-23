@@ -52,7 +52,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; color: #131313; line-height: 1.4; background: white; min-width: 960px; }
 
-.is-hidden { display: none; }
+.is-hidden { display: none !important; }
 
 .breadcrumb { *zoom: 1; margin-bottom: 15px; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; }
 .breadcrumb:after { content: " "; display: table; clear: both; }
@@ -83,13 +83,13 @@ body { font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: norma
 
 .login { float: right; font-size: 11px; *zoom: 1; }
 .login:after { content: " "; display: table; clear: both; }
-.login .login__signin, .login .login__signup { float: left; }
+.login .login__signin, .login .login__signup, .login .login__auth { display: inline-block; }
 .login .login__input { width: 106px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding-left: 1px; margin-left: 15px; border-bottom: 1px solid #68bab3; background: none; color: white; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; }
 .login .login__input:-moz-placeholder { color: white; }
 .login .login__input::-webkit-input-placeholder { color: white; }
 .login .login__input:focus:-moz-placeholder { color: transparent; }
 .login .login__input:focus::-webkit-input-placeholder { color: transparent; }
-.login .login__btn { position: relative; margin-left: 10px; color: white; background: none; border-bottom: 1px dotted white; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; }
+.login .login__btn { display: inline-block; position: relative; margin-left: 10px; color: white; background: none; border-bottom: 1px dotted white; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; }
 .login .login__btn:active { top: 1px; }
 
 .language { float: right; margin-left: 10px; width: 60px; text-align: right; color: #095851; font-size: 13px; font-family: "Open Sans", sans-serif; font-weight: 700; font-style: normal; margin-top: -3px; }

@@ -15,7 +15,7 @@
 <body>
 
 <!-- begin bar -->
-<div class="bar js-toggleaccount">
+<div class="bar">
 	<div class="bar-i">
 		<!-- begin language -->
 		<div class="language">
@@ -26,13 +26,17 @@
 		<!-- end language -->
 		<!-- begin login -->
 		<div class="login">
-			<div class="login__signin">
-				<input type="text" class="login__input is-hidden" placeholder="Логин">
-				<input type="password" class="login__input is-hidden" placeholder="Пароль">
+			<div class="login__signin is-hidden">
+				<input type="text" class="login__input" placeholder="Логин">
+				<input type="password" class="login__input" placeholder="Пароль">
 				<button type="submit" class="login__btn">Войти</button>
 			</div>
+			<div class="login__auth">
+				Добро пожаловать, Константинов Константин
+				<button type="text" class="login__btn js-toggleaccount">Профиль</button>
+			</div>
 			<div class="login__signup">
-				<button type="submit" class="login__btn">Регистрация</button>
+				<button type="submit" class="login__btn">Выйти</button>
 			</div>
 		</div>
 		<!-- end login -->

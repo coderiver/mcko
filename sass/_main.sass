@@ -13,7 +13,7 @@ body
 	margin-right: auto
 
 .is-hidden
-	display: none
+	display: none !important
 
 // breadcrumb
 .breadcrumb
@@ -104,8 +104,9 @@ body
 	font-size: 11px
 	+clr
 	.login__signin,
-	.login__signup
-		float: left
+	.login__signup,
+	.login__auth
+		display: inline-block
 	.login__input
 		width: 106px
 		+box
@@ -119,6 +120,7 @@ body
 		&:focus
 			+placeholder-color(transparent)
 	.login__btn
+		display: inline-block
 		position: relative
 		margin-left: 10px
 		color: $white
@@ -942,10 +944,7 @@ a.link
 		text-decoration: none
 		color: $green
 
-
-
-
-
+// slider
 .slider
 	position: relative
 	.slider__pager
