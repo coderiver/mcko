@@ -55,6 +55,14 @@ body
 	+ag_b
 	text-transform: uppercase
 
+.dlink
+	text-decoration: none !important
+	border-bottom: 1px dotted $pink
+	&:hover
+		border-bottom: 1px dotted $green
+	&:active
+		border-bottom: 1px dotted $grey
+
 // list
 .list
 	li
@@ -1023,7 +1031,14 @@ a.link
 
 
 
-
+// box
+=gbox
+	border: 1px solid #cfcfcf
+	+border-radius(5px)
+	background-color: #e5e5e5
+	min-height: 1px
+	padding: 20px 15px
+	+box
 
 
 

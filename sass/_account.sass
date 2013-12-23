@@ -1,4 +1,4 @@
-.account
+.account-widget
 	background: #172133
 	position: fixed
 	top: 30px
@@ -12,39 +12,21 @@
 		+clr
 		position: relative
 	.account__profile
-		float: left
-		width: 226px 
-		font-size: 12px 
 		color: #fff
+		margin-left: 10px
+		margin-right: 10px
 		a
 			color: #fff
 			text-decoration: none
 			&:hover
 				color: #fff
 				text-decoration: underline
-		.account__avatar
-			margin-bottom: 10px 
 		h2
-			font-size: 21px 
 			color: #FFFFFF
-			font-weight: normal 
-			line-height: 1.2 
-			margin-top: 8px 
-			margin-bottom: 12px 
-	.account__money,.account__points
-		padding-left: 28px 
-		position: relative
-		margin-bottom: 6px 
-		i
-			position: absolute
-			left: 0
-			top: 0px  
-			display: inline-block
 	.account__money i
 		+s(money)
 	.account__points i
 		+s(points)
-		top: -1px 
 	.account__head
 		font-size: 13px
 		text-transform: uppercase
@@ -90,7 +72,6 @@
 		max-height: 268px 
 		overflow: auto
 		padding-right: 20px 
-		
 	.webinarsmall
 		border-radius: 5px
 		background-color: #c14d93
@@ -139,3 +120,110 @@
 			margin-left: 18px
 			margin-right: 14px  
 			vertical-align: middle
+
+.account__money,.account__points
+	padding-left: 28px
+	position: relative
+	margin-bottom: 6px
+	i
+		position: absolute
+		left: 0
+		top: 0px
+		display: inline-block
+.account__money i
+	+s(money-dark)
+.account__points i
+	+s(points-dark)
+	+gray
+	top: -1px
+
+.account
+	margin-bottom: 95px
+.account__profile
+	float: left
+	width: 220px
+	margin-right: 20px
+	font-size: 12px
+	color: $dark
+	a
+		color: $dark
+		text-decoration: none
+		&:hover
+			color: $dark
+			text-decoration: underline
+	.account__avatar
+		margin-bottom: 10px
+	h2
+		font-size: 21px
+		font-weight: normal
+		line-height: 1.2
+		margin-top: 8px
+		margin-bottom: 12px
+
+.account__content
+.account__head
+	margin-bottom: 15px
+	text-transform: uppercase
+	a
+		color: $dark
+		text-decoration: none
+		margin: 0 3px
+		&:hover, &.is-active
+			color: #c14d94
+			text-decoration: none
+
+
+.account__items
+	+clr
+	.account__item
+		+gbox
+		float: left
+		width: 200px
+		margin-left: 20px
+		min-height: 315px
+		&:first-child
+			margin-left: 0
+		a
+			color: #c14d94
+			&:hover
+				color: $dark
+			&.dlink
+				color: #c14d94
+				border-color: #c14d94
+				&:hover
+					color: $dark
+					border-color: $dark
+	.account__item-title
+		margin-bottom: 10px
+		line-height: 1
+		.icon-edit
+			margin-left: 8px
+			margin-top: -3px
+			&:hover
+				cursor: pointer
+
+.account__row
+	margin-bottom: 10px
+	+ag_r
+	font-size: 12px
+	strong, label
+		+ag_b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

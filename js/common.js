@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 	// show account block
 	var $toggleAccount = $('.js-toggleaccount');
-	var $account = $('.account');
+	var $account = $('.account-widget');
 	$($toggleAccount).click(function(event) {
 		$($account).slideToggle();
 	});
