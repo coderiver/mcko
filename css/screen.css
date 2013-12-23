@@ -436,7 +436,10 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .form .form__row .t4, .form .form__row .form__new, .form .form__row .form__old { display: inline-block; }
 .form .form__row .form__new, .form .form__row .form__old { margin-left: 5px; font-size: 13px; }
 .form .form__row .form__new { text-decoration: none; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; }
-.form .form__row .form__old { color: black; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; }
+.form .form__row .form__old { line-height: 1; font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; }
+.form .form__row a.link { color: black; border-bottom-color: black; }
+.form .form__row a.link:hover { color: #d00e53; border-bottom-color: #d00e53; }
+.form .form__row a.link:active { color: #0f8293; border-bottom-color: #0f8293; }
 
 .type-doc { *zoom: 1; }
 .type-doc:after { content: " "; display: table; clear: both; }
