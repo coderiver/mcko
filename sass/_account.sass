@@ -1,5 +1,10 @@
 .account
 	background: #172133
+	position: fixed
+	top: 30px
+	left: 0
+	width: 100%
+	z-index: 1000
 	.account__in
 		width: 960px 
 		margin: 0 auto 
@@ -10,7 +15,13 @@
 		float: left
 		width: 226px 
 		font-size: 12px 
-		color: #fff 
+		color: #fff
+		a
+			color: #fff
+			text-decoration: none
+			&:hover
+				color: #fff
+				text-decoration: underline
 		.account__avatar
 			margin-bottom: 10px 
 		h2
@@ -42,17 +53,23 @@
 		a
 			text-decoration: none
 			color: #fff 
-			margin: 0 3px 
+			margin: 0 3px
 	.account__webinars
 		width: 400px 
 		float: left
-		.account__head .is-active
-			color: #BF5093 
+		.account__head
+			a
+				&:hover, &:active, &.is-active
+					text-decoration: none
+					color: #BF5093
 	.account__files
 		width: 316px 
 		float: left
-		.account__head .is-active
-			color: #1F8ECD 
+		.account__head
+			a
+				&:hover, &:active, &.is-active
+					text-decoration: none
+					color: #1F8ECD
 	.account__hide
 		position: absolute
 		right: 0

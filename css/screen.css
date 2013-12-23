@@ -463,10 +463,12 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 
 .icon-rar { background: url('../img/icons-sdc57791791.png') 0 -372px no-repeat; width: 34px; height: 25px; }
 
-.account { background: #172133; }
+.account { background: #172133; position: fixed; top: 30px; left: 0; width: 100%; z-index: 1000; }
 .account .account__in { width: 960px; margin: 0 auto; padding: 58px 0 63px 0; *zoom: 1; position: relative; }
 .account .account__in:after { content: " "; display: table; clear: both; }
 .account .account__profile { float: left; width: 226px; font-size: 12px; color: white; }
+.account .account__profile a { color: white; text-decoration: none; }
+.account .account__profile a:hover { color: white; text-decoration: underline; }
 .account .account__profile .account__avatar { margin-bottom: 10px; }
 .account .account__profile h2 { font-size: 21px; color: white; font-weight: normal; line-height: 1.2; margin-top: 8px; margin-bottom: 12px; }
 .account .account__money, .account .account__points { padding-left: 28px; position: relative; margin-bottom: 6px; }
@@ -476,9 +478,9 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .account .account__head { font-size: 13px; text-transform: uppercase; color: white; margin-bottom: 8px; }
 .account .account__head a { text-decoration: none; color: white; margin: 0 3px; }
 .account .account__webinars { width: 400px; float: left; }
-.account .account__webinars .account__head .is-active { color: #bf5093; }
+.account .account__webinars .account__head a:hover, .account .account__webinars .account__head a:active, .account .account__webinars .account__head a.is-active { text-decoration: none; color: #bf5093; }
 .account .account__files { width: 316px; float: left; }
-.account .account__files .account__head .is-active { color: #1f8ecd; }
+.account .account__files .account__head a:hover, .account .account__files .account__head a:active, .account .account__files .account__head a.is-active { text-decoration: none; color: #1f8ecd; }
 .account .account__hide { position: absolute; right: 0; bottom: -1px; font-size: 11px; color: white; cursor: pointer; height: 21px; line-height: 21px; padding-right: 35px; }
 .account .account__hide i { display: inline-block; background: url('../img/icons-sdc57791791.png') 0 -1176px no-repeat; width: 21px; height: 21px; position: absolute; right: 0; bottom: 0; }
 .account .account__scroll { max-height: 268px; overflow: auto; padding-right: 20px; }
