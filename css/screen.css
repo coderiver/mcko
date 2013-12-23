@@ -379,6 +379,9 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .members_doc .members__photo img { max-height: 330px; }
 
 .doc-type { text-align: center; }
+.doc-type a { color: black; }
+.doc-type a:hover { color: #d00e53; }
+.doc-type a:active { color: #0f8293; }
 .doc-type > ol { text-align: left; position: relative; }
 .doc-type > ol > li { margin-bottom: 10px; font-size: 13px; color: #131313; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; padding-left: 15px; position: relative; }
 .doc-type > ol > li .doc-type__num { position: absolute; top: 0; left: 0; }
