@@ -994,6 +994,10 @@ a.link
 			&:hover
 				+s(c-move)
 				cursor: pointer
+			&.disabled
+				cursor: default
+				&:hover
+					+s(c-move-h)
 		.slider__prev
 			left: 0
 		.slider__next

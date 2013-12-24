@@ -345,6 +345,8 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .slider .slider__pager span.cycle-pager-active { cursor: default; }
 .slider .slider__nav span { position: absolute; top: 170px; font: 0/0 a; text-shadow: none; color: transparent; display: block; background: url('../img/icons-s36ce993aa1.png') 0 -796px no-repeat; width: 61px; height: 61px; z-index: 101; }
 .slider .slider__nav span:hover { background: url('../img/icons-s36ce993aa1.png') 0 -964px no-repeat; width: 61px; height: 61px; cursor: pointer; }
+.slider .slider__nav span.disabled { cursor: default; }
+.slider .slider__nav span.disabled:hover { background: url('../img/icons-s36ce993aa1.png') 0 -796px no-repeat; width: 61px; height: 61px; }
 .slider .slider__nav .slider__prev { left: 0; }
 .slider .slider__nav .slider__next { right: 0; -moz-transform: rotate(180deg); -o-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand'); zoom: 1; }
 .slider .slider__item { overflow: hidden; height: 425px; width: 100%; }
