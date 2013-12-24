@@ -21,9 +21,29 @@
 	+s(xml)
 
 .icon-clock
-	+s(icon-clock)
+	+s(icon-clock) 
 
 .icon-rar
 	+s(rar)
-.icon-webibar_btn
-	+s(icon-webibar_btn)
+
+
+.slider__btn
+	width: 14px
+	height: 33px
+	background: #1D1D1B 
+	&:hover
+		+opacity(0.5)
+	.arrow
+		position: absolute
+		top: 50%
+		margin-top: -6px
+		left: 50%
+		margin-left: -4px
+
+.slider__btn-next
+	.arrow
+		+s(icon-webinar_next)
+		
+.slider__btn-prev
+	.arrow
+		+s(icon-webinar_prev)

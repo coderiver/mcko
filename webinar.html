@@ -8,6 +8,8 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -155,22 +157,47 @@
 								<i class="webinar__tree"></i>
 							</td>
 							<td>
-								<div class="webinar__item">
-									<div class="webinar__item-media"><img src="img/webinar1.jpg" alt=""></div>
-									<div class="webinar__item-descr">
-										<h2 class="h2">Вебинар «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS»</h2>
-										<p class="webinar__item-note">Приглашаем всех принять участие в вебинаре «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS». На нём мы расскажем, как на основе технологий Яндекса создать поисковое решение,... </p>
-										<div class="webinar__item-author">
-											<p>Ведущая вебинара:</p>
-											<h3 class="h3">Ольга Кислицина</h3>
+								<div class="cycle-slideshow"
+								data-cycle-fx="scrollHorz"
+								data-cycle-timeout="0"
+								data-cycle-slides="> div"
+								data-cycle-prev=".cycle-prev"
+								data-cycle-next=".cycle-next"
+								>
+									<div class="webinar__item">
+										<div class="webinar__item-media"><img src="img/webinar1.jpg" alt=""></div>
+										<div class="webinar__item-descr">
+											<h2 class="h2">Вебинар «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS»</h2>
+											<p class="webinar__item-note">Приглашаем всех принять участие в вебинаре «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS». На нём мы расскажем, как на основе технологий Яндекса создать поисковое решение,... </p>
+											<div class="webinar__item-author">
+												<p>Ведущая вебинара:</p>
+												<h3 class="h3">Ольга Кислицина</h3>
+											</div>
+											<div class="webinar__item-time">
+												<p>До вебинара осталось: </p>
+												<h4 class="h4">15 часов 33 минуты</h4>
+											</div>
+											<div class="btn btn__black">Участвовать в вебинаре</div>
 										</div>
-										<div class="webinar__item-time">
-											<p>До вебинара осталось: </p>
-											<h4 class="h4">15 часов 33 минуты</h4>
-										</div>
-										<div class="btn btn__black">Участвовать в вебинаре</div>
 									</div>
-									<a href="#" class="icon-webibar_btn webinar__btn"></a>
+									<div class="webinar__item">
+										<div class="webinar__item-media"><img src="img/webinar1.jpg" alt=""></div>
+										<div class="webinar__item-descr">
+											<h2 class="h2">Вебинар «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS»</h2>
+											<p class="webinar__item-note">Приглашаем всех принять участие в вебинаре «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS». На нём мы расскажем, как на основе технологий Яндекса создать поисковое решение,... </p>
+											<div class="webinar__item-author">
+												<p>Ведущая вебинара:</p>
+												<h3 class="h3">Ольга Кислицина</h3>
+											</div>
+											<div class="webinar__item-time">
+												<p>До вебинара осталось: </p>
+												<h4 class="h4">15 часов 33 минуты</h4>
+											</div>
+											<div class="btn btn__black">Участвовать в вебинаре</div>
+										</div>
+									</div>
+									<a href="#" class="slider__btn slider__btn-next cycle-next"><i class="arrow"></i></a>
+									<a href="#" class="slider__btn slider__btn-prev cycle-prev"><i class="arrow"></i></a>
 								</div>
 							</td>
 						</tr>
@@ -383,7 +410,6 @@
 						</tr>
 					</table>
 				</li>
-
 			</ul>
 		</div>
 		<!-- end webinar -->
