@@ -403,7 +403,7 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .years li:hover, .years li.is-active { background: #fbbd2f; }
 .years li:first-child .years__year { margin-left: 0; }
 .years li:last-child .years__year { margin-left: -19px; }
-.years li a { color: black; text-decoration: none; }
+.years li a { color: black; text-decoration: none; display: block; padding-top: 2px; }
 .years li a:hover { text-decoration: none; }
 .years .years__year { display: block; margin-top: 15px; margin-left: -10px; font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; color: black; }
 
