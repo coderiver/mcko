@@ -1054,7 +1054,6 @@ a.link
 	&.is-active
 		+opacity(1)
 		z-index: 1001
-
 .popup
 	position: fixed
 	width: 300px
@@ -1102,7 +1101,6 @@ a.link
 				border-bottom: 2px dotted #989898
 				&:hover
 					border-bottom: none
-
 .js-tabs-item
 	display: none
 	&.is-visible
@@ -1145,6 +1143,7 @@ a.link
 		background: $grey
 		position: relative
 		top: 1px
+
 .help-inline
 	display: inline-block
 	vertical-align: middle
@@ -1159,8 +1158,80 @@ a.link
 		&:hover
 			text-decoration: none
 
+// plan
+.plan
+	.title
+		margin-bottom: 1.5em
 
+// years
+.years
+	position: relative
+	margin-bottom: 50px
+	min-height: 1px
+	&:before
+		position: absolute
+		height: 1px
+		left: 0
+		top: 0
+		width: 100%
+		background: #c7c7c7
+		content: ""
+	li
+		position: absolute
+		top: -4px
+		height: 9px
+		width: 9px
+		background: #c7c7c7
+		+border-radius(50%)
+		&:hover, &.is-active
+			background: #fbbd2f
+		&:first-child
+			.years__year
+				margin-left: 0
+		&:last-child
+			.years__year
+				margin-left: -19px
+		a
+			color: #000
+			text-decoration: none
+			&:hover
+				text-decoration: none
+	.years__year
+		display: block
+		margin-top: 15px
+		margin-left: -10px
+		font-size: 13px
+		+ag_m
+		color: #000
 
+.docs_mod
+	.docs__list
+		+clr
+	.docs__item
+		margin-bottom: 20px
+		float: left
+		width: 233px
+		margin-top: 0 !important
+		height: 135px
+		padding: 11px
+		+box
+		& > a
+			display: block
+			max-height: 100%
+			overflow: hidden
+			padding: 0
+		a
+			.docs__head
+				color: #333
+				text-decoration: underline
+			&:hover
+				.docs__head
+					color: $grey
+					text-decoration: underline
+		.t2
+			margin-bottom: 1em
+		&:hover
+			border-color: #fbbd2f
 
 
 
