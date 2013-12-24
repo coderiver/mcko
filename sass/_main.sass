@@ -5,12 +5,23 @@ body
 	line-height: 1.4
 	background: $white
 	min-width: 960px
+	&.js-popup-open
+		overflow: hidden
 // main wrapper
 =wrap
 	display: block
 	width: 940px
 	margin-left: auto
 	margin-right: auto
+
+// box
+=gbox
+	border: 1px solid #cfcfcf
+	+border-radius(5px)
+	background-color: #e5e5e5
+	min-height: 1px
+	padding: 20px 15px
+	+box
 
 .is-hidden
 	display: none !important
@@ -55,6 +66,19 @@ body
 	+ag_b
 	text-transform: uppercase
 
+// links
+a.link
+	border-bottom: 1px dotted $grey
+	text-decoration: none
+	color: $grey
+	&:hover
+		border-bottom: 1px dotted $pink
+		text-decoration: none
+		color: $pink
+	&:active
+		border-bottom: 1px dotted $green
+		text-decoration: none
+		color: $green
 .dlink
 	text-decoration: none !important
 	border-bottom: 1px dotted $pink
@@ -939,19 +963,6 @@ body
 		color: $grey
 		margin-bottom: 0.5em
 
-a.link
-	border-bottom: 1px dotted $grey
-	text-decoration: none
-	color: $grey
-	&:hover
-		border-bottom: 1px dotted $pink
-		text-decoration: none
-		color: $pink
-	&:active
-		border-bottom: 1px dotted $green
-		text-decoration: none
-		color: $green
-
 // slider
 .slider
 	position: relative
@@ -1029,16 +1040,131 @@ a.link
 		font-size: 34px
 		margin-bottom: 0.2em
 
+// popup
+.overlay
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(#000, .8)
+	z-index: -1
+	+opacity(0)
+	+transition(all .3s linear)
+	&.is-active
+		+opacity(1)
+		z-index: 1001
 
+.popup
+	position: fixed
+	width: 300px
+	left: 50%
+	top: 150px
+	margin-left: -150px
+	z-index: -1
+	+opacity(0)
+	+transform(translate3d(0,-100%,0))
+	+transition(all .3s ease-in)
+	&.is-active
+		+opacity(1)
+		z-index: 1002
+		+transform(translate3d(0,0,0))
+	.button
+		margin-top: 3px
+	.popup__content
+		position: relative
+		padding: 25px 20px
+		background-color: #edeeef
+		border: 1px solid #ababab
+	.popup__logo
+		+s(logo-white)
+		margin-left: -60px
+		margin-bottom: 20px
+		a
+			display: block
+			height: 100%
+			+hidetext
+	.popup__nav
+		margin-bottom: 15px
+		li
+			display: inline-block
+			font-size: 18px
+			+ag_b
+			&.is-active
+				a
+					color: #000
+					text-decoration: none
+					border-bottom: none
+					cursor: default
+			a
+				color: #989898
+				text-decoration: none
+				border-bottom: 2px dotted #989898
+				&:hover
+					border-bottom: none
 
-// box
-=gbox
-	border: 1px solid #cfcfcf
-	+border-radius(5px)
-	background-color: #e5e5e5
-	min-height: 1px
-	padding: 20px 15px
+.js-tabs-item
+	display: none
+	&.is-visible
+		display: block
+
+// alternative input
+.input_alt
+	display: block
+	width: 100%
 	+box
+	margin-bottom: 12px
+	padding: 8px 10px 6px
+	border: 1px solid #cacaca
+	background: #fff
+	color: #333
+	+placeholder-color(#717171)
+	font-size: 15px
+	line-height: 20px
+	+ag_m
+	&:focus
+		+placeholder-color(#fff)
+	&.is-error
+		+placeholder-color(#e13f3f)
+		border: 1px solid #da3d3d
+		&:focus
+			border: 1px solid #cacaca
+			+placeholder-color(#fff)
+
+// button
+.button
+	padding: 11px 16px 8px
+	background: #0f8293
+	color: #fff
+	font-size: 15px
+	line-height: 1
+	+ag_m
+	&:hover
+		background: $pink
+	&:active
+		background: $grey
+		position: relative
+		top: 1px
+.help-inline
+	display: inline-block
+	vertical-align: middle
+	line-height: 34px
+	margin-left: 50px
+	font-size: 14px
+	color: #000
+	+ag_r
+	a
+		color: #000
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+
+
+
+
+
+
+
 
 
 
