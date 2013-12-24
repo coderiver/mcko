@@ -533,6 +533,7 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .slider__btn { width: 14px; height: 33px; background: #1d1d1b; }
 .slider__btn:hover { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); opacity: 0.5; }
 .slider__btn .arrow { position: absolute; top: 50%; margin-top: -6px; left: 50%; margin-left: -4px; }
+.slider__btn.disabled { display: none; }
 
 .slider__btn-next .arrow { background: url('../img/icons-s3dc28359d1.png') 0 -1323px no-repeat; width: 8px; height: 13px; }
 
