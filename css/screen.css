@@ -252,7 +252,7 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .docs .docs__item.docs_xml .docs__head:before { background: url('../img/icons-s36ce993aa1.png') 0 -685px no-repeat; width: 34px; height: 25px; }
 .docs .docs__item.docs_rar .docs__head:before { background: url('../img/icons-s36ce993aa1.png') 0 -441px no-repeat; width: 34px; height: 25px; }
 .docs .docs__item.docs_ppt .docs__head:before { background: url('../img/icons-s36ce993aa1.png') 0 -581px no-repeat; width: 34px; height: 25px; }
-.docs .docs__item > a { padding: 11px 11px 8px; display: block; text-decoration: none; }
+.docs .docs__item > a { padding: 11px 11px 8px; display: block; min-height: 25px; text-decoration: none; }
 .docs .docs__item > a .docs__head { text-decoration: underline; color: #434343; }
 .docs .docs__item > a .docs__text { color: #7e7e7e; }
 .docs .docs__item > a:hover .docs__head { text-decoration: none; color: #d00e53; }
@@ -407,6 +407,8 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .years li a:hover { text-decoration: none; }
 .years .years__year { display: block; margin-top: 15px; margin-left: -10px; font-size: 13px; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; color: black; }
 
+.date { font-size: 10px; font-family: "PFAgoraSlabPro-Light"; font-weight: normal; font-style: normal; margin-bottom: 1em; }
+
 .docs_mod .docs__list { *zoom: 1; }
 .docs_mod .docs__list:after { content: " "; display: table; clear: both; }
 .docs_mod .docs__item { margin-bottom: 20px; float: left; width: 233px; margin-top: 0 !important; height: 135px; padding: 11px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -416,12 +418,28 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 .docs_mod .docs__item .t2 { margin-bottom: 1em; }
 .docs_mod .docs__item:hover { border-color: #fbbd2f; }
 
+.comments .comments__title { text-transform: uppercase; margin-bottom: 1.5em; font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; }
+.comments .comments__post { *zoom: 1; margin-bottom: 10px; }
+.comments .comments__post:after { content: " "; display: table; clear: both; }
+.comments .comments__userpic { float: left; display: block; width: 60px; min-height: 1px; margin-right: 20px; }
+.comments .comments__userpic img { display: block; max-width: 100%; height: auto; }
+.comments .comments__body { overflow: hidden; font-family: "PFAgoraSlabPro-Light"; font-weight: normal; font-style: normal; }
+.comments .comments__meta { margin-bottom: 0.2em; }
+.comments .comments__text p { width: 380px; }
+.comments .comments__text .comments__post { margin-top: 10px; margin-bottom: 0; }
+.comments .comments__reply { margin-top: 30px; width: 380px; *zoom: 1; }
+.comments .comments__reply:after { content: " "; display: table; clear: both; }
+.comments .comments__reply textarea { display: block; width: 100%; resize: none; height: 80px; padding: 10px; margin-bottom: 10px; border: 1px solid #c4c4c4; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-family: "PFAgoraSlabPro-Light"; font-weight: normal; font-style: normal; }
+.comments .comments__reply .button { float: right; }
+
 .l { display: block; width: 940px; margin-left: auto; margin-right: auto; margin-bottom: 20px; *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
 .l .l-left { float: left; width: 220px; margin-right: -220px; }
 .l .l-main { float: left; margin-left: 240px; width: 460px; }
 .l .l-right { float: right; width: 220px; margin-left: -220px; }
 .l .l-solo { margin-left: 240px; overflow: hidden; }
+.l .l-col1 { float: left; width: 700px; }
+.l .l-col2 { float: right; width: 220px; }
 
 .members { font-family: "PFAgoraSlabPro-Regular"; font-weight: normal; font-style: normal; }
 .members .members__item { padding-top: 25px; border-top: 1px solid #0f8293; *zoom: 1; }

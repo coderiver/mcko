@@ -670,6 +670,7 @@ a.link
 		& > a
 			padding: 11px 11px 8px
 			display: block
+			min-height: 25px
 			text-decoration: none
 			.docs__head
 				text-decoration: underline
@@ -1206,6 +1207,10 @@ a.link
 		+ag_m
 		color: #000
 
+.date
+	font-size: 10px
+	+ag_l
+	margin-bottom: 1em
 .docs_mod
 	.docs__list
 		+clr
@@ -1235,13 +1240,55 @@ a.link
 		&:hover
 			border-color: #fbbd2f
 
+// comments
+.comments
+	.comments__title
+		text-transform: uppercase
+		margin-bottom: 1.5em
+		+ag_b
+	.comments__post
+		+clr
+		margin-bottom: 10px
+	.comments__userpic
+		float: left
+		display: block
+		width: 60px
+		min-height: 1px
+		margin-right: 20px
+		img
+			display: block
+			max-width: 100%
+			height: auto
+	.comments__body
+		overflow: hidden
+		+ag_l
+	.comments__meta
+		margin-bottom: .2em
+	.comments__username
+	.comments__date
+	.comments__text
+		p
+			width: 380px
+		.comments__post
+			margin-top: 10px
+			margin-bottom: 0
 
-
-
-
-
-
-
+	.comments__reply
+		margin-top: 30px
+		width: 380px
+		+clr
+		textarea
+			display: block
+			width: 100%
+			resize: none
+			height: 80px
+			padding: 10px
+			margin-bottom: 10px
+			border: 1px solid #c4c4c4
+			+box
+			+ag_l
+		.button
+			float: right
 
 
 
