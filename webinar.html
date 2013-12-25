@@ -1,0 +1,492 @@
+<!doctype html>
+<!--[if lte IE 8]><html class="lteie8"><![endif]-->
+<!--[if gt IE 8]><!--><html><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>webinar</title>
+	<meta name="viewport" content="initial-scale=1"/>
+	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/cycle.js"></script>
+	<script src="js/common.js"></script>
+</head>
+<body>
+
+<!-- begin bar -->
+<div class="bar">
+	<div class="bar-i">
+		<!-- begin language -->
+		<div class="language">
+			<a href="#" class="is-active">RU</a>
+			<span class="language__divider">|</span>
+			<a href="#">EN</a>
+		</div>
+		<!-- end language -->
+		<!-- begin login -->
+		<div class="login">
+			<div class="login__signin">
+				<input type="text" class="login__input" placeholder="Логин">
+				<input type="password" class="login__input" placeholder="Пароль">
+				<button type="submit" class="login__btn">Войти</button>
+			</div>
+			<div class="login__signup is-hidden">
+				<button type="submit" class="login__btn">Регистрация</button>
+			</div>
+		</div>
+		<!-- end login -->
+	</div>
+</div>
+<!-- end bar -->
+<!-- begin header -->
+<div class="header">
+	<h1 class="header__logo"><a href="#">МЦКО</a></h1>
+	<div class="header__main">
+		<div class="header__slogan">Образование. Качество. Будущее.</div>
+		<!-- begin nav -->
+		<ul class="nav">
+			<li><a href="#">О МЦКО</a></li>
+			<li>
+				<a href="#">Вебинары и курсы</a>
+				<div class="nav__drop">
+					<ul>
+						<li><a href="#">Курсы</a></li>
+						<li><a href="#">Вебинары</a></li>
+						<li><a href="#">Купить видео</a></li>
+						<li><a href="#">Бесплатные видео</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a href="#">Медиатека</a></li>
+			<li><a href="#">Форум</a></li>
+		</ul>
+		<!-- end nav -->
+	</div>
+	<div class="header__info">
+		<div class="search">
+			<div class="search-i">
+				<input type="text" class="search__query" placeholder="поиск">
+				<button class="search__btn"></button>
+			</div>
+		</div>
+		<p>Звоните: 8 800 300 00 24</p>
+		<p>Пишите: <a href="mailto:info@mcko.ru">info@mcko.ru</a></p>
+	</div>
+</div>
+<!-- end header -->
+<!-- begin content -->
+<div class="content l">
+	<!-- begin l-left -->
+	<div class="l-left">
+		<!-- begin subnav -->
+		<div class="subnav subnav_mod">
+			<ul>
+
+				<li class="subnav__item subnav__item_support">
+					<div class="subnav__title">Сопровождение контрольно-надзорных функций</div>
+					<ul class="subnav__list list">
+						<li><a href="#">сопровождение лицензирования и аккредетации</a></li>
+						<li><a href="#">плановые проверки качества образования</a></li>
+						<li><a href="#">деятельность экспертов</a></li>
+					</ul>
+				</li>
+
+				<li class="subnav__item subnav__item_monitoring">
+					<div class="subnav__title">Мониторинг<br> и диагностика</div>
+					<ul class="subnav__list list">
+						<li><a href="#">мониторинг и диагностика образовательных достижений обучающихся</a></li>
+						<li><a href="#">мониторинг качества образования</a></li>
+						<li><a href="#">проекты по оценке качества образования</a></li>
+					</ul>
+				</li>
+
+				<li class="subnav__item subnav__item_attest">
+					<div class="subnav__title">Аттестация педагогических и руководящих работников</div>
+					<ul class="subnav__list list">
+						<li><a href="#">нормативная база</a></li>
+						<li><a href="#">аттестация педагогических работников на кваллифика-ционную категорию</a></li>
+						<li><a href="#">аттестация руководителей и кандидатов</a></li>
+						<li><a href="#">списки работников</a></li>
+						<li><a href="#">результаты заседания</a></li>
+					</ul>
+				</li>
+
+				<li class="subnav__item subnav__item_total-attest">
+					<div class="subnav__title">Итоговая<br> аттестация</div>
+					<ul class="subnav__list list">
+						<li><a href="#">Основное общее образовани</a></li>
+						<li><a href="#">Среднее общее образование</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+		<!-- end subnav -->
+	</div>
+	<!-- end l-left -->
+	<!-- begin l-solo -->
+	<div class="l-solo">
+		<!-- begin breadcrumb -->
+		<ul class="breadcrumb">
+			<li><a href="#">Главная</a><span class="breadcrumb__divider">/</span></li>
+			<li><span class="breadcrumb__divider">/</span><a href="#">Вебинары и курсы</a></li>
+		</ul>
+		<!-- end breadcrumb -->
+		<div class="title">Вебинары</div>
+		<!-- begin webinar -->
+		<div class="webinar">
+			<ul class="webinar__nav">
+				<li class="is-active"><a href="#">Идущие семинары (12)</a></li>
+				<li><a href="#">Будущие семинары (354)</a></li>
+				<li><a href="#">Прошедшие семинары (12 354)</a></li>
+			</ul>
+			<ul class="webinar__in">
+				<li class="is-active">
+					<table>
+						<tr>
+							<td class="webinar__left">
+								<div class="webinar__date">
+									<div class="events">
+										<div class="events__meta">
+											<span class="events__date">31</span>
+											<span class="events__day">сен</span>
+										</div>
+									</div>
+								</div>
+								<i class="webinar__tree"></i>
+							</td>
+							<td>
+								<div class="cycle-slideshow"
+								data-cycle-fx="scrollHorz"
+								data-allow-wrap="false"
+								data-cycle-timeout="0"
+								data-cycle-slides="> div"
+								data-cycle-prev=".cycle-prev"
+								data-cycle-next=".cycle-next"
+								>
+									<div class="webinar__item">
+										<div class="webinar__item-media"><img src="img/webinar1.jpg" alt=""></div>
+										<div class="webinar__item-descr">
+											<h2 class="h2">Вебинар «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS»</h2>
+											<p class="webinar__item-note">Приглашаем всех принять участие в вебинаре «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS». На нём мы расскажем, как на основе технологий Яндекса создать поисковое решение,... </p>
+											<div class="webinar__item-author">
+												<p>Ведущая вебинара:</p>
+												<h3 class="h3">Ольга Кислицина</h3>
+											</div>
+											<div class="webinar__item-time">
+												<p>До вебинара осталось: </p>
+												<h4 class="h4">15 часов 33 минуты</h4>
+											</div>
+											<div class="btn btn__black">Участвовать в вебинаре</div>
+										</div>
+									</div>
+									<div class="webinar__item">
+										<div class="webinar__item-media"><img src="img/webinar1.jpg" alt=""></div>
+										<div class="webinar__item-descr">
+											<h2 class="h2">Вебинар «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS»</h2>
+											<p class="webinar__item-note">Приглашаем всех принять участие в вебинаре «Яндекс.Поиск для сайта: мастер-класс по HTML и CSS». На нём мы расскажем, как на основе технологий Яндекса создать поисковое решение,... </p>
+											<div class="webinar__item-author">
+												<p>Ведущая вебинара:</p>
+												<h3 class="h3">Ольга Кислицина</h3>
+											</div>
+											<div class="webinar__item-time">
+												<p>До вебинара осталось: </p>
+												<h4 class="h4">15 часов 33 минуты</h4>
+											</div>
+											<div class="btn btn__black">Участвовать в вебинаре</div>
+										</div>
+									</div>
+									<a href="#" class="slider__btn slider__btn-next cycle-next"><i class="arrow"></i></a>
+									<a href="#" class="slider__btn slider__btn-prev cycle-prev"><i class="arrow"></i></a>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr>
+							<td class="webinar__left">
+								<div class="webinar__date">
+									<div class="events">
+										<div class="events__meta">
+											<span class="events__date">04</span>
+											<span class="events__day">окт</span>
+										</div>
+									</div>
+								</div>
+								<i class="webinar__tree"></i>
+							</td>
+							<td>
+								<div class="webinar__item webinar__item_mini">
+									<div class="webinar__item-in">
+										<div class="webinar__item-media"><img src="img/webinar2.jpg" alt=""></div>
+										<div class="webinar__time">
+											<div class="webinar__time-in">
+												<div>
+													<i class="icon-clock"></i>
+													<div class="webinar__time-left">
+														<p>До вебинара осталось:</p>
+														<h2 class="h2">3 д. 23 ч.</h2>
+													</div>
+												</div>
+												<div class="btn btn__webinar">Участвовать в вебинаре</div>
+											</div>
+										</div>
+									</div>
+									<div class="webinar__item-descr">
+										<div class="webinar__item-author">
+											<h3 class="h3">Виктор Плахин</h3>
+											<p>Стрес как стиль жизни. Управление своими эмоциями.</p>
+										</div>
+									</div>
+								</div>
+								<div class="webinar__item webinar__item_mini">
+									<div class="webinar__item-in">
+										<div class="webinar__item-media"><img src="img/webinar3.jpg" alt=""></div>
+										<div class="webinar__time">
+											<div class="webinar__time-in">
+												<div>
+													<i class="icon-clock"></i>
+													<div class="webinar__time-left">
+														<p>До вебинара осталось:</p>
+														<h2 class="h2">3 д. 23 ч.</h2>
+													</div>
+												</div>
+												<div class="btn btn__webinar">Участвовать в вебинаре</div>
+											</div>
+										</div>
+									</div>
+									<div class="webinar__item-descr">
+										<div class="webinar__item-author">
+											<h3 class="h3">Тед броскон</h3>
+											<p>Управление толпой. Поведение гибонов в условиях кризиса.</p>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr>
+							<td class="webinar__left">
+								<div class="webinar__date">
+									<div class="events">
+										<div class="events__meta">
+											<span class="events__date">17</span>
+											<span class="events__day">окт</span>
+										</div>
+									</div>
+								</div>
+								<i class="webinar__tree"></i>
+							</td>
+							<td>
+								<div class="webinar__item">
+									<div class="webinar__item-media"><img src="img/webinar4.jpg" alt=""></div>
+									<div class="webinar__item-descr">
+										<h2 class="h2">PR: как это слово понимаете вы, и как его понимает ребенок</h2>
+										<p class="webinar__item-note">Вы удивитесь, но в основе любой НЕэффективности лежит СТРАХ, скрытый или явный! Что делать, чтобы контролировать свой страх и владеть своими эмоциями?,... </p>
+										<div class="webinar__item-author">
+											<p>Ведущая вебинара:</p>
+											<h3 class="h3">Юлия Дорохина</h3>
+										</div>
+										<div class="btn btn__black">Участвовать в вебинаре</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<table>
+						<tr>
+							<td class="webinar__left">
+								<div class="webinar__date">
+									<div class="events">
+										<div class="events__meta">
+											<span class="events__date">30</span>
+											<span class="events__day">окт</span>
+										</div>
+									</div>
+								</div>
+								<i class="webinar__tree"></i>
+							</td>
+							<td>
+								<div class="webinar__item webinar__item_mini">
+									<div class="webinar__item-in">
+										<div class="webinar__item-media"><img src="img/webinar5.jpg" alt=""></div>
+										<div class="webinar__time">
+											<div class="webinar__time-in">
+												<div>
+													<i class="icon-clock"></i>
+													<div class="webinar__time-left">
+														<p>До вебинара осталось:</p>
+														<h2 class="h2">3 д. 23 ч.</h2>
+													</div>
+												</div>
+												<div class="btn btn__webinar">Участвовать в вебинаре</div>
+											</div>
+										</div>
+									</div>
+									<div class="webinar__item-descr">
+										<div class="webinar__item-author">
+											<h3 class="h3">Влада Колесникова</h3>
+											<p>Стрес как стиль жизни. Управление своими эмоциями.</p>
+										</div>
+									</div>
+								</div>
+								<div class="webinar__item webinar__item_mini">
+									<div class="webinar__item-in">
+										<div class="webinar__item-media"><img src="img/webinar6.jpg" alt=""></div>
+										<div class="webinar__time">
+											<div class="webinar__time-in">
+												<div>
+													<i class="icon-clock"></i>
+													<div class="webinar__time-left">
+														<p>До вебинара осталось:</p>
+														<h2 class="h2">3 д. 23 ч.</h2>
+													</div>
+												</div>
+												<div class="btn btn__webinar">Участвовать в вебинаре</div>
+											</div>
+										</div>
+									</div>
+									<div class="webinar__item-descr">
+										<div class="webinar__item-author">
+											<h3 class="h3">Клара Фергисон</h3>
+											<p>Управление толпой. Поведение гибонов в условиях кризиса.</p>
+										</div>
+									</div>
+								</div>
+								<div class="webinar__item webinar__item_mini">
+									<div class="webinar__item-in">
+										<div class="webinar__item-media"><img src="img/webinar7.jpg" alt=""></div>
+										<div class="webinar__time">
+											<div class="webinar__time-in">
+												<div>
+													<i class="icon-clock"></i>
+													<div class="webinar__time-left">
+														<p>До вебинара осталось:</p>
+														<h2 class="h2">3 д. 23 ч.</h2>
+													</div>
+												</div>
+												<div class="btn btn__webinar">Участвовать в вебинаре</div>
+											</div>
+										</div>
+									</div>
+									<div class="webinar__item-descr">
+										<div class="webinar__item-author">
+											<h3 class="h3">Ирина Топченко</h3>
+											<p>Стрес как стиль жизни. Управление своими эмоциями.</p>
+										</div>
+									</div>
+								</div>
+								<div class="webinar__item webinar__item_mini">
+									<div class="webinar__item-in">
+										<div class="webinar__item-media"><img src="img/webinar8.jpg" alt=""></div>
+										<div class="webinar__time">
+											<div class="webinar__time-in">
+												<div>
+													<i class="icon-clock"></i>
+													<div class="webinar__time-left">
+														<p>До вебинара осталось:</p>
+														<h2 class="h2">3 д. 23 ч.</h2>
+													</div>
+												</div>
+												<div class="btn btn__webinar">Участвовать в вебинаре</div>
+											</div>
+										</div>
+									</div>
+									<div class="webinar__item-descr">
+										<div class="webinar__item-author">
+											<h3 class="h3">Валерия Мамонова</h3>
+											<p>Управление толпой. Поведение гибонов в условиях кризиса.</p>
+										</div>
+									</div>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</li>
+			</ul>
+		</div>
+		<!-- end webinar -->
+	</div>
+	<!-- end l-solo -->
+
+</div>
+<!-- end content -->
+
+<!-- begin footer -->
+<div class="footer">
+	<div class="footer__links">
+		<div class="footer__links-holder">
+			<div class="footer__links-title"><i></i>Полезные ссылки</div>
+			<ul class="footer__links-list">
+				<li><a href="#"><span>МРКО</span></a></li>
+				<li><a href="#"><span>РЦОИ</span></a></li>
+				<li><a href="#">Ассоциации<br> учителей</a></li>
+				<li><a href="#">Ассоциация<br> директоров школ</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer__row">
+		<div class="footer__col1">
+			<!-- begin feedback -->
+			<div class="feedback">
+				<div class="feedback__row">
+					<div class="feedback__col">
+						<label>Имя:<span>*</span></label>
+						<input type="text" placeholder="">
+					</div>
+					<div class="feedback__col">
+						<label>Эл. почта:<span>*</span></label>
+						<input type="text" placeholder="">
+					</div>
+					<div class="feedback__col">
+						<label>Телефон:<span>*</span></label>
+						<input type="text" placeholder="">
+					</div>
+				</div>
+				<div class="feedback__row">
+					<label>Сообщение:<span>*</span></label>
+					<textarea class="feedback__text"></textarea>
+					<button class="feedback__btn">Отправить нам сообщение</button>
+				</div>
+			</div>
+			<!-- end feedback -->
+		</div>
+		<div class="footer__col2">
+			<div class="footer__logo"><a href="#">МЦКО</a></div>
+			<ul class="footer__menu list">
+				<li><a href="#">О МЦКО</a></li>
+				<li><a href="#">Вебинары и курсы</a></li>
+				<li><a href="#">Медиатека</a></li>
+				<li><a href="#">Документы</a></li>
+				<li><a href="#">Форум</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
