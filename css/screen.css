@@ -467,6 +467,7 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 
 .webinar__in li { margin-bottom: 15px; }
 .webinar__in li.is-active .events { color: black; }
+.webinar__in li:last-child .webinar__tree:after { width: 1px; height: 100%; left: 23px; bottom: -110px; }
 .webinar__in .events { color: #c7c7c7; }
 .webinar__in td { vertical-align: top; }
 
@@ -511,6 +512,20 @@ a.link:active { border-bottom: 1px dotted #0f8293; text-decoration: none; color:
 
 .docs_alt .docs__item { margin-top: 0; margin-bottom: 0; border: none; }
 .docs_alt .docs__item:hover { border: none; }
+
+.sign-up { padding: 20px; background: #f4f4f4; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.sign-up h2 { font-size: 21px; font-family: "PFAgoraSlabPro-Medium"; font-weight: normal; font-style: normal; }
+
+.sign-up__top { margin-bottom: 15px; *zoom: 1; }
+.sign-up__top:after { content: " "; display: table; clear: both; }
+.sign-up__top .sign-up__top-left { width: 335px; float: left; }
+.sign-up__top .sign-up__top-right { float: right; }
+.sign-up__top .sign-up__top-right .btn { padding: 0 45px 0 50px; }
+
+.sign-up__cont p { margin-bottom: 10px; }
+.sign-up__cont strong { font-family: "PFAgoraSlabPro-Bold"; font-weight: normal; font-style: normal; }
+
+.sign-up__bottom { padding: 12px 20px; margin: 0 -20px -20px; line-height: 1; background: #e1e1e1; color: #383838; }
 
 [class^="icon-"], [class*=" icon-"] { display: inline-block; vertical-align: middle; }
 

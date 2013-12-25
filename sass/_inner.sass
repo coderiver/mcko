@@ -288,7 +288,15 @@
 		margin-bottom: 15px
 		&.is-active
 			.events
-				color: #000 
+				color: #000
+		&:last-child
+			.webinar__tree
+				&:after
+					width: 1px
+					height: 100%
+					left: 23px
+					bottom: -110px 
+					
 	.events
 		color: #c7c7c7 
 	td
@@ -447,3 +455,31 @@
 		&:hover
 			border: none
 
+.sign-up
+	padding: 20px
+	background: #F4F4F4
+	+box
+	h2
+		font-size: 21px
+		+ag_m 
+.sign-up__top
+	margin-bottom: 15px
+	+clr
+	.sign-up__top-left
+		width: 335px
+		float: left
+	.sign-up__top-right
+		float: right
+		.btn
+			padding: 0 45px 0 50px
+.sign-up__cont
+	p
+		margin-bottom: 10px
+	strong
+		+ag_b
+.sign-up__bottom
+	padding: 12px 20px
+	margin: 0 -20px -20px
+	line-height: 1
+	background: #E1E1E1
+	color: #383838 
