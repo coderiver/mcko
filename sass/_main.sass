@@ -188,6 +188,7 @@ a.link
 	+clr
 	height: 150px
 	padding-top: 30px
+	margin-bottom: 20px
 	.header__logo
 		float: left
 		width: 300px
@@ -268,7 +269,8 @@ a.link
 				+s(nav-shadow)
 				content: ""
 		li
-			margin-left: 23px
+			margin-left: 17px
+			width: 85px
 			&:first-child
 				margin-left: 0
 			a
@@ -1237,7 +1239,7 @@ a.link
 				text-decoration: underline
 			&:hover
 				.docs__head
-					color: $grey
+					color: #9a9a9a
 					text-decoration: underline
 		.t2
 			margin-bottom: 1em
@@ -1293,6 +1295,115 @@ a.link
 			+ag_l
 		.button
 			float: right
+
+
+
+
+
+
+// photo-popup
+.photo-popup__overlay
+	position: fixed
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	background: rgba(#000, .8)
+	z-index: -1
+	+opacity(0)
+	+transition(all .3s linear)
+	&.is-active
+		+opacity(1)
+		z-index: 1001
+.photo-popup
+	position: fixed
+	width: 620px
+	left: 50%
+	top: 100px
+	margin-left: -310px
+	z-index: -1
+	+opacity(0)
+	+transform(translate3d(0,-100%,0))
+	+transition(all .3s ease-in)
+	color: #fff
+	+ag_r
+	font-size: 18px
+	&.is-active
+		+opacity(1)
+		z-index: 1002
+		+transform(translate3d(0,0,0))
+	.photo-popup__title
+		margin-bottom: 0.5em
+	// gallery
+	.gallery__nav
+		a
+			position: absolute
+			top: 50%
+			z-index: 1000
+			+s(c-move-h)
+			+hidetext
+			margin-top: -30px
+			&:hover
+				+s(c-move)
+			&.disabled
+				+s(c-move-h)
+				cursor: default
+		.gallery__prev
+			left: -30px
+		.gallery__next
+			right: -30px
+			+rotate(180)
+	// gallery__main
+	.gallery__main
+		position: relative
+		margin-bottom: 20px
+		.gallery__caption
+			position: absolute
+			bottom: 0
+			right: 0
+			line-height: 1
+			z-index: 100
+			background: #000000
+			+opacity(.6)
+			padding: 7px 9px
+			min-width: 25px
+			text-align: center
+			font-size: 11px
+			+box
+			+ag_b
+		.gallery__item
+			height: 575px
+			width: 620px
+			img
+				display: block
+	// gallery__thumb
+	.gallery__thumb
+		position: relative
+		.gallery__thumbnail
+			width: 140px !important
+			margin-right: 20px
+			&:hover
+				cursor: pointer
+			img
+				width: 140px
+				display: block
+		.gallery__nav
+			a
+				margin-top: -13px
+				+s(c-move-sm-h)
+				&:hover
+					+s(c-move-sm)
+				&.disabled
+					+s(c-move-sm-h)
+			.gallery__prev
+				left: -13px
+			.gallery__next
+				right: -13px
+
+
+
+
+
 
 
 
