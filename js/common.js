@@ -54,7 +54,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	var slideshows = $('.cycle-slideshow').on('cycle-next cycle-prev', function(e, opts) {
+	var slideshows = $('webinar__in li .cycle-slideshow').on('cycle-next cycle-prev', function(e, opts) {
 		// advance the other slideshow
 		slideshows.not(this).cycle('goto', opts.currSlide);
 	});
@@ -64,5 +64,10 @@ $(document).ready(function() {
 			slideshows.cycle('goto', index);
 	});
 
+	// js-webinar
+	$(".webinar__item .js-wibibar-hide").click(function(){
+		$(this).parents(".webinar__item").toggleClass('is-hide');
+		$(this).toggleClass('is-rotate')
+	});
 
 });

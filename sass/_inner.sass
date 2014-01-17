@@ -360,6 +360,10 @@
 	min-height: 100px
 	overflow: hidden
 	position: relative
+	border-right: 1px solid #d4d4d4
+	&.is-hide
+		.webinar__item-descr
+			display: none
 .webinar__title
 	margin: 10px 0 0 !important
 	font-size: 13px
@@ -369,6 +373,7 @@
 	width: 304px
 	margin-left: 9px
 	float: left
+	border-right: 0
 	&:nth-child(2n+1)
 		margin-left: 0
 	.webinar__item-in
@@ -426,7 +431,6 @@
 	width: 300px
 	padding: 15px 20px 20px
 	background: rgba(255,255,255, .90)
-	border-right: 1px solid #d4d4d4
 	position: absolute
 	top: 1px
 	bottom: 1px
