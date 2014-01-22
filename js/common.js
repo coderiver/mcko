@@ -5,6 +5,15 @@ $(document).ready(function() {
 		$('.js-scrollable .js-scrollable__container').scrollable();
 	}
 
+	function scrollpane(){
+	    if ($(".scroll-pane").length > 0){
+	        $('.scroll-pane').jScrollPane({
+	            reinitialise: true
+	        }); 
+	    }
+	}
+	scrollpane();
+
 	// show account block
 	var $toggleAccount = $('.js-toggleaccount');
 	var $account = $('.account-widget');

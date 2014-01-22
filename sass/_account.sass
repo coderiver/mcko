@@ -100,26 +100,26 @@
 			width: 270px 
 			padding: 8px 0 
 			vertical-align: middle
-	.file
-		background: #1F8ECD
-		border-radius: 5px
-		font-size: 13px  
-		color: #fff
-		text-decoration: none
-		display: block
-		height: 63px - 13px
-		padding: 13px 0 0 0
-		margin-bottom: 5px 
-		.file__title
-			display: inline-block
-			width: 212px 
-			vertical-align: middle
-		.file__type
-			+s(pdficon)
-			display: inline-block
-			margin-left: 18px
-			margin-right: 14px  
-			vertical-align: middle
+.file
+	background: #1F8ECD
+	border-radius: 5px
+	font-size: 13px  
+	color: #fff
+	text-decoration: none
+	display: block
+	height: 63px - 13px
+	padding: 13px 0 0 0
+	margin-bottom: 5px 
+	.file__title
+		display: inline-block
+		width: 212px 
+		vertical-align: middle
+	.file__type
+		+s(pdficon)
+		display: inline-block
+		margin-left: 18px
+		margin-right: 14px  
+		vertical-align: middle
 
 .account__money,.account__points
 	padding-left: 28px
@@ -139,6 +139,54 @@
 
 .account
 	margin-bottom: 95px
+.account_mod
+	overflow: hidden
+	.account__more
+		position: relative
+		clear: both
+		.i-acc-arr
+			+s(i-arr-more)
+			position: absolute
+			left: 0
+			top: 3px
+		a
+			text-decoration: none
+			&:hover, &:active
+				text-decoration: none
+		span
+			margin-left: 20px
+			border-bottom: 1px dotted #000
+			color: #000 
+			text-decoration: none
+			&:hover
+				text-decoration: none
+				border-color: #0F8293
+				color: #0F8293
+			&:active
+				text-decoration: none
+				border-color: #7e7e7e
+				color: #7e7e7e 
+			
+	.account__scroll
+		width: 335px !important
+		height: auto
+		margin-bottom: 10px
+		float: left
+		&:first-child
+			margin-right: 10px
+	.account__head
+		a
+			text-transform: none
+	.file
+		color: #FFF
+		text-decoration: none
+		&:hover
+			background: #F59D1E
+			color: #FFF
+			text-decoration: none
+		.file__title
+			color: #FFF
+
 .account__profile
 	float: left
 	width: 220px
