@@ -673,6 +673,14 @@ a.link
 			.docs__head
 				&:before
 					+s(ppt)
+		&.docs_mov
+			.docs__head
+				&:before
+					+s(mov)
+		&.docs_xlsx
+			.docs__head
+				&:before
+					+s(xlsx)
 		& > a
 			padding: 11px 11px 8px
 			display: block
@@ -712,7 +720,14 @@ a.link
 		border-top: 2px solid #bdbdbd
 		margin-top: 3px
 		padding-top: 7px
-
+.docs_alt
+	ul
+		+clr
+		li
+			margin-right: 15px
+			float: left
+		.docs__head
+			padding-left: 42px
 // events
 .events
 	margin-bottom: 30px
@@ -1020,7 +1035,7 @@ a.link
 			position: absolute
 			top: 0
 			left: 0
-			width: 100%
+			// width: 100%
 			min-height: 425px
 			height: auto
 			+cover
@@ -1068,6 +1083,8 @@ a.link
 	&.is-active
 		+opacity(1)
 		z-index: 1001
+.overlay_mod
+	background: rgba(#000, 1)
 .popup
 	position: fixed
 	width: 300px
@@ -1089,6 +1106,10 @@ a.link
 		padding: 25px 20px
 		background-color: #edeeef
 		border: 1px solid #ababab
+	.popup__note
+		margin-bottom: 40px
+		color: #949494 
+		+ag_m
 	.popup__logo
 		+s(logo-white)
 		margin-left: -60px
@@ -1115,6 +1136,11 @@ a.link
 				border-bottom: 2px dotted #989898
 				&:hover
 					border-bottom: none
+.popup_mod
+.popup__row
+	+clr
+	.fl-r
+		float: right
 .js-tabs-item
 	display: none
 	&.is-visible
@@ -1171,7 +1197,20 @@ a.link
 		text-decoration: underline
 		&:hover
 			text-decoration: none
-
+.back-inline
+	display: inline-block
+	display: inline-block
+	vertical-align: middle
+	line-height: 34px
+	margin-left: 25px
+	font-size: 14px
+	color: #000
+	+ag_r
+	a
+		color: #000
+		text-decoration: underline
+		&:hover
+			text-decoration: none
 // plan
 .plan
 	.title
