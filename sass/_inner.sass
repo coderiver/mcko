@@ -547,6 +547,7 @@
 		color: #8e8e8e 
 //////////////////////////////////////// * association.html * ////////////////////////////////////////
 .association
+	position: relative
 .association__info
 	margin: 25px 0 20px
 	border: 2px solid #fbbd30
@@ -609,4 +610,213 @@
 	color: #D5D5D5
 	.association__name
 		color: #b6b6b6
+.association-list
+	margin-right: -18px
+	font-size: 0
+	position: relative
+	+clr
+	& > li
+		width: 217px
+		margin-right: 18px
+		margin-bottom: 20px
+		display: inline-block
+		vertical-align: top
+		position: relative
+		&:hover
+			.association-list__in
+				padding: 20px 30px
+				margin: -60px
+				border-color: #fbbd30
+				background: #fff
+				z-index: 666
+				position: absolute
+			.association-list__info
+				margin: 15px 0
+				text-align: left
+				color: #0077B7
+				border-color: transparent
+				br
+					display: none
+			.association-list__more
+				display: block
+			.association-list__detail
+				display: block
+	.association-list__in
+		min-height: 357px
+		position: relative
+		border: 2px solid #cecece
+	.association-list__media
+		width: 100%
+		height: 172px
+		line-height: 172px
+		overflow: hidden
+		text-align: center
+		font-size: 0
+		a
+			display: block
+		img
+			max-width: 100% 
+			vertical-align: middle
+	.association-list__info
+		margin: 15px 32px
+		padding: 0 0 15px
+		text-align: center
+		border-bottom: 1px solid #c9cbd0
+		font-size: 14px
+	.association-list__addr
+		margin: 17px 20px 25px
+		font-size: 13px
+		text-align: center
+.association-list__detail
+	display: none
+	font-size: 14px
+	ul
+	li
+		margin-top: 10px
+		list-style-type: disc
+		list-style-position: inside
+		+ag_r
+.association-list__more
+	margin-top: 17px
+	display: none
+	text-align: center
+	overflow: hidden
+	a
+		padding: 0 7px
+		text-decoration: underline
+		font-size: 14px
+		color: #000
+		position: relative
+		&:hover
+			text-decoration: none
+		&:before, &:after
+			content: ""
+			position: absolute
+			top: 50%
+			margin-top: 2px
+			width: 500px
+			height: 1px
+			background: #c9cbd0
+		&:before
+			left: 100%
+			margin-left: 12px
+		&:after
+			right: 100%
+			margin-right: 12px
 		
+// popup__count
+.popup__count
+	position: relative
+	padding: 15px
+	background: #128DD0
+.popup__on-ccount
+	position: relative
+	padding-left: 30px
+	color: #FFF 
+	+ag_m
+	&:before
+		content: ""
+		+s(i-bacs)
+		position: absolute
+		left: 0
+		top: 0
+.popup__num
+	font-size: 30px
+	color: #FFF 
+	+ag_l
+.popup__balls
+	font-size: 100px
+	color: #FFF
+	line-height: 1
+	+ag_m
+.popup__balls-note
+	font-size: 14px
+	color: #FFF
+	line-height: 1
+	text-align: right
+	+ag_l
+.popup__replenish
+	background: #0F8293 
+	padding: 5px 25px 5px 10px
+	position: relative
+	color: #fff
+	text-decoration: none
+	vertical-align: middle
+	position: absolute
+	right: 0
+	top: 100%
+	&:before
+		content: ""
+		+s(i-book)
+		display: inline-block
+		vertical-align: top
+		margin: 2px 5px 0 0 
+	&:hover
+		text-decoration: none
+.popup__replenish-in
+	padding: 15px 20px
+	background: #EDEEEF
+	color: #000
+	.radio
+		margin-right: 15px
+		margin-bottom: 10px
+.popup__replenish-meta
+	display: block
+	margin-bottom: 15px
+	&:before
+		content: ""
+		+s(i-boock_b)
+		margin-right: 9px
+		display: inline-block
+		vertical-align: middle
+///////////////////////////////// * radio * ////////////////////////////////
+// variables for radio
+$rad-size: 14px
+$rad-checked_size: 4px
+$rad-checked_bg: #0f8293
+$f-border: #0f8293
+$f-color: #000
+.radio-wrap
+	margin-right: -20px
+.radio
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	font-size: 14px
+	span
+		display: inline-block
+		vertical-align: middle
+		margin-left: 3px
+		+ag_r
+	input
+		+opacity(0)
+		position: relative
+	input + span
+		color: $f-color 
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 0px
+			width: $rad-size
+			height: $rad-size
+			margin-top: -7px
+			border: 3px solid #bfbfbf
+			border-radius: 50%
+			background: transparent
+			+opacity(1)
+			+box
+	input:checked + span
+		&:before
+			border: 3px solid $f-border
+		&:after
+			content: ""
+			position: absolute
+			top: 8px
+			left: (($rad-size - $rad-checked_size) / 2)
+			width: $rad-checked_size
+			height: $rad-checked_size
+			border-radius: 50%
+			background: $rad-checked_bg
+	

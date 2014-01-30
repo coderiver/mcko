@@ -100,6 +100,23 @@
 			width: 270px 
 			padding: 8px 0 
 			vertical-align: middle
+.account-widget_mod
+	position: static
+	overflow: hidden
+	background: transparent 
+	.account__webinars
+		width: 345px
+	.webinarsmall
+		&:hover
+			color: #FFF
+			background: #0f987f
+			text-decoration: none
+		.webinarsmall__title
+			width: 250px
+	.account-widget__list
+		float: left
+	.account-widget__list_r
+		float: right
 .file
 	background: #1F8ECD
 	border-radius: 5px
@@ -250,6 +267,9 @@
 			&:hover
 				cursor: pointer
 
+.account__items_mod
+	.account__item
+		background: #FFF 
 .account__row
 	margin-bottom: 10px
 	+ag_r
