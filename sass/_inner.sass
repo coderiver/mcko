@@ -255,8 +255,49 @@
 	&:focus
 		border: 1px solid darken($col,15%)
 		@include box-shadow(inset 0 0px 1px darken($col,5%))
-		
-
+.input_readme
+	width: 100%
+	padding: 3px 8px
+	border: 1px solid #959595
+	font-size: 13px
+	color: #000 
+	+box
+	+border-radius(1px)
+	+ag_r
+	+placeholder
+		color: #000
+	&:focus
+		border-color: #c14d94
+///////////////////////////////// * checkbox * ////////////////////////////////
+.checkbox
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	cursor: pointer
+	span
+		color: #767676
+		display: inline-block
+		margin-left: 18px
+		+nosel
+	input
+		position: absolute
+		+opacity(0)
+	input + span
+		.checkbox__ico
+			content: ""
+			position: absolute
+			top: 5px
+			left: 0px
+			+s(i-nocheck)
+	input:checked + span
+		.checkbox__ico
+			&:after
+				content: ""
+				position: absolute
+				+s(i-checked)
+				z-index: 666
+	input:checked + span
+		color: #000
 //////////////////////////////////////// * webinar.html * ////////////////////////////////////////
 .webinar
 	padding-bottom: 10px
